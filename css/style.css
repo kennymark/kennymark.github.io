@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Raleway', sans-serif;
+}
+
+nav{
+	height: 75px;
+	width: 100%;
+	text-align: center;
+}
+
+nav ul{
+	padding: 45px;
+}
+
+nav ul li{
+	text-transform: uppercase;
+	display: inline-block;
+	margin-right: 80px;
+}
+
+nav ul li a{
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+
+header{
+	
+	background-color: black;
+}
+
+
+.landingsection{
+	background-image:url(../images/eiffeltower.jpg); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+h1{
+	text-transform: uppercase;
+	text-align: center;	
+	
+}
+
+
+.aboutsection{
+	height: 500px;	
+	background-color: #057CB1;
+}
+
+.photocircle{
+	border-radius: 50%;
+	width:200px;
+	height:200px;
+	color:transparent;
+	border: 1px solid black;
+	margin: 0 auto;
+	padding-top: 20px;
+	box-shadow: 1px 1px 1px 1px gray;
+}
+
+.skillssection{
+	height: 500px;
+	background-color: #E87E04;	
+}
+
+.contactsection{
+	height: 500px;
+	background-color: #BDC3C7;
+}
+
+.icons{
+	text-align: center;
+	padding-top: 40px;
+}
+
+footer{
+	height: 100px;
+	background-color: red;
+}
+
+i{
+	font-size: 35px;
+	margin-right: 20px;
+	color: white;
+}
+
+footer p{
+	color: white;
+	text-align:center;
+	font-size: 12.2px;
+	padding-top: 25px;
+
+}
