@@ -2,7 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
-
+html{
+	font-size: 100%;
+}
 body{
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -22,6 +24,12 @@ nav ul{
 	padding: 40px;
 }
 
+.fa-bars{
+	float: left;
+	color: white;
+	visibility: hidden;
+}
+
 nav ul li{
 	text-transform: uppercase;
 	display: inline-block;
@@ -33,6 +41,10 @@ nav ul li a{
 	color: white;
 	text-decoration: none;
 	font-weight: 300px;
+}
+
+nav ul li a:active{
+	text-decoration: underline;
 }
 
 header{
@@ -99,6 +111,23 @@ footer{
 	background-color: red;
 }
 
+.fa-facebook:hover{
+	font-size: 30px;
+	-webkit-transition: all 0.3s;
+	color: #3a5795;
+}
+.fa-twitter:hover{
+	font-size: 30px;
+	-webkit-transition: all 0.3s;
+	color:#55acee;
+}
+
+.fa-envelope-o:hover{
+	font-size: 30px;
+	-webkit-transition: all 0.3s;
+	color:black;
+}
+
 i{
 	font-size: 35px;
 	margin-right: 20px;
@@ -110,5 +139,10 @@ footer p{
 	text-align:center;
 	font-size: 12.2px;
 	padding-top: 25px;
+
+}
+
+@media screen and (min-width: 400px)  {
+	
 
 }
