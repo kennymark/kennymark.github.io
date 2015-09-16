@@ -12,12 +12,13 @@ body{
 }
 
 nav{
-	height: 100px;
+	height: 75px;
 	width: 100%;
 	text-align: center;
 	position: fixed;
 	top: 0;
 	background-color: rgba(0, 0, 0, 0.11);
+	transition: all 0.7s ease;
 }
 
 nav ul{
@@ -33,7 +34,7 @@ nav ul{
 nav ul li{
 	text-transform: uppercase;
 	display: inline-block;
-	margin-right: 40px;
+	margin-right: 30px;
 }
 
 nav ul li a{
@@ -43,8 +44,19 @@ nav ul li a{
 	font-weight: 300px;
 }
 
-nav ul li a:active{
+nav ul li a:hover{
 	text-decoration: underline;
+	transition: all 1s ease;
+}
+
+nav.past-main {
+    background-color:#000;
+    height: 75px;
+   
+}
+
+nav ul.past-height{
+	padding: 25px;
 }
 
 header{
@@ -58,9 +70,7 @@ header{
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 650px;
-	width: 100%;
-	top: 0;
-	left: 0;
+	width: 100%;	
 	z-index: 1;
 
 }
@@ -68,37 +78,54 @@ header{
 h1{
 	text-transform: uppercase;
 	text-align: center;	
-	padding-top:350px;
+	padding-top:250px;
 	color: #254648;
-	font-size: 45px;
+	font-size: 55px;
+	font-family: 'Montserrat', sans-serif;
 	
 }
 
 
 .aboutsection{
-	height: 500px;	
-	background-color: #057CB1;
+	height: 550px;	
+	background-color: white;
 }
 
 .photocircle{
-	border-radius: 50%;
-	width:200px;
-	height:200px;
+	width:240px;
+	height:240px;
 	color:transparent;
-	border: 1px solid black;
+	border: .5px solid black;
 	margin: 0 auto;
-	padding-top: 20px;
-	box-shadow: 1px 1px 1px 1px gray;
+	padding-top: 60px;
+	
+}
+
+#profilepic{
+	height: 250px;
+	width: 230px;
+	background-size: cover;
+	border-radius: 50%;
+	text-align: center;
+	background-size: cover;
+	
+}
+.aboutme {
+	width: 90%;
+	margin: auto;
+	padding-top: 65px;
+	line-height: 28px;
+    font-size: 20px;
 }
 
 .skillssection{
 	height: 500px;
-	background-color: #E87E04;	
+	background-color: #Efefef;	
 }
 
 .contactsection{
 	height: 500px;
-	background-color: #BDC3C7;
+	background-color: #2EAEBB;
 }
 
 .icons{
@@ -107,30 +134,52 @@ h1{
 }
 
 footer{
-	height: 100px;
-	background-color: red;
+	height: 150px;
+	background-color: #5D0335;
 }
 
 .fa-facebook:hover{
-	font-size: 30px;
-	-webkit-transition: all 0.3s;
+	font-size: 25px;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transform:rotate(360deg);
 	color: #3a5795;
 }
 .fa-twitter:hover{
-	font-size: 30px;
-	-webkit-transition: all 0.3s;
+	font-size: 25px;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transform:rotate(360deg);
 	color:#55acee;
 }
 
-.fa-envelope-o:hover{
-	font-size: 30px;
+.fa-linkedin:hover{
+	font-size: 25px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.4s;	
+	transform:rotate(360deg);
+	color: #0077B5;
+}
+
+.fa-envelope:hover{
+	font-size: 25px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.4s;
+	transform:rotate(360deg);
+	color: black;
+}
+.fa-github:hover{
+	font-size: 25px;
+	color: #9C27B0;
 	-webkit-transition: all 0.3s;
-	color:black;
+	-moz-transition: all 0.4s;
+	transform:rotate(360deg);
+	-webkit-transform: rotate (5deg);
 }
 
 i{
-	font-size: 35px;
-	margin-right: 20px;
+	margin-left: 10px;
+    margin-right: 10px;
 	color: white;
 }
 
@@ -142,7 +191,37 @@ footer p{
 
 }
 
-@media screen and (min-width: 400px)  {
-	
+footer h3{
+	padding-top: 25px;
+	text-shadow: 0px 1px #181918;
+}
 
+.fa-heart{
+	color: #B30303;
+}
+
+
+.skillstext{
+	font-size: 20px;
+	font-weight: 300px;
+	line-height: 50px;
+}
+
+@media screen and (max-width: 400px)  {
+	.fa-bars{
+		visibility: visible;
+	}
+
+	nav{
+		background-color: #0077B5;
+		height: 200px;
+	}
+	
+	nav ul li{
+		display: inline;
+		text-align: center;
+		padding-top: 60px;
+
+		
+	}
 }

@@ -9,6 +9,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">	
 	<link href='https://fonts.googleapis.com/css?family=Raleway:300,400,500' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/simplegrid.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 </head>
 
@@ -18,41 +21,117 @@
 
 		<div class="landingsection">
 			<h1 style="">I am kenny mark </h1>
+			<h1 style="font-size:30px; padding-top:20px;">WEB DESIGNER  //FRONT END DEVELOPER</h1>
 		</div>	
 		<nav>
 			<ul>
 				<i class="fa fa-bars"></i>
-				<li><a href="">About</a></li>
-				<li><a href="">Projects</a></li>
-				<li><a href="">Skills</a></li>
-				<li><a href="">Contact</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	
-	<div class="aboutsection">
-		<div class="photocircle">
+	
+
+	<a name="about">
+		<div class="aboutsection">
+			<div class="photocircle">
+				<img src="images/profilepic.jpg" alt="" id="profilepic">
+			</div>
+			<div class="grid grid-pad">
+			    <div class="col-1-1">
+			       <div class="content">
+			           <p class="aboutme" >
+							I am currently a student in college studying Computing and Systems Development at John Moore's University, Liverpool. I am a junior web developer but I also specialize in web designing. I am very passionate about developing websites and I mainly focus on UX and UI. I have worked on several personal projects including my personal website which were all hand coded and in less than 3 days.
+						</p>
+			       </div>
+			    </div>
+			</div>
+	
+		</div>
+	</a>
+	
+	
+	<a name="skills">
+		<div class="skillssection">	
+			<div class="grid grid-pad">
+			    <div class="col-1-2">
+			       <div class="content">
+			       	   <h3>SKILLS</h3>
+			           
+			           <p class="skillstext" style="padding-top:40px;">• Git</p>
+			           <p class="skillstext">• Project Design </p>
+			           <p class="skillstext">• HTML5</p>
+			           <p class="skillstext">• CSS3</p>
+			           <p class="skillstext">• Javascript</p>
+			           <p class="skillstext">• JQuery</p>
+
+			       </div>
+			    </div>
+			    <div class="col-1-2">
+			       <div class="content">
+			           
+			           <p style="padding-top:60px; line-height:32px; font-size:20px;"; >
+			           	I am currently a junior developer working my way up to be a mid-level developer very soon. I am actively spend hours
+			           	a day writing web code to perfect my skills. I am really passionate about web development hence the effort I put in. 
+			           	Skill wise, I can practically build any type of website with a good modern and responsive design that doesn't complex interactions between the
+			           	browser and a server. 
+			           </p>
+			       </div>
+			    </div>
+			</div>
+		</div>
+	</a>
+	
+	
+	<a name="contact">
+		<div class="contactsection">
 			
 		</div>
-		
-	</div>
-
-	<div class="skillssection">
-		
-	</div>
+	</a>
 	
-	<div class="contactsection">
-		
-	</div>
 	
 	<footer>
 		<div class="icons">
 			<a href="#"><i class="fa fa-facebook"></i></a>
 			<a href="#"><i class="fa fa-twitter"></i></a>
 			<a href=""><i class="fa fa-linkedin"></i></a>
-			<a href="#"><i class="fa fa-envelope-o"></i></a>
+			<a href=""><i class="fa fa-github"></i></a>
+			<a href="mailto:unico.genio@outlook.com"><i class="fa fa-envelope"></i></a>	
 		</div>
+		
+		<h3 style="text-align:center;">Made with<i class="fa fa-heart"></i>in Liverpool</h3>
+		
 		<p>All rights reserved ©Kenneth Mark Coffie 2015 </p>
 	</footer>
+	
+	<script>
+		var mainbottom = $('.landingsection').offset().top + $('.aboutsection').height();
+
+		// on scroll, 
+		$(window).on('scroll',function(){
+
+		    // we round here to reduce a little workload
+		    stop = Math.round($(window).scrollTop());
+		    if (stop > mainbottom) {
+		        $('nav').addClass('past-main');
+		        
+		    } else {
+		        $('nav').removeClass('past-main');
+		   }
+
+		   if (stop > mainbottom) {
+		        $('ul').addClass('past-height');
+		       
+		    } else {
+		        $('nav').removeClass('past-main');
+		   }
+
+		});
+	</script>
+
 </body>
 </html>
