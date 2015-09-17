@@ -32,6 +32,7 @@ nav ul{
 	float: left;
 	color: white;
 	visibility: hidden;
+	margin: 20px;
 }
 
 nav ul li{
@@ -227,7 +228,7 @@ footer h3{
 	
 	}
 
-	nav, nav ul li a{
+	nav ul li a{
 		visibility: hidden;
 	}
 }
