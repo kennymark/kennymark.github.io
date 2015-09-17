@@ -2,9 +2,12 @@
 	margin: 0;
 	padding: 0;
 }
+
+
 html{
 	font-size: 100%;
 }
+
 body{
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -214,14 +217,17 @@ footer h3{
 
 	nav{
 		background-color: #0077B5;
-		height: 200px;
+		height: 50px;
 	}
 	
 	nav ul li{
 		display: inline;
 		text-align: center;
 		padding-top: 60px;
+	
+	}
 
-		
+	nav, nav ul li a{
+		visibility: hidden;
 	}
 }
