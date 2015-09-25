@@ -78,27 +78,21 @@ header{
 	width: 100%;	
 	align-items: center;
  	text-align: center;
-	   position: center;
-  margin-bottom: 50px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+	position: center;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 
 }
 
 h1{
 	text-transform: uppercase;
-	text-align: center;	
-	
 	color: #254648;
 	font-size: 55px;
 	font-family: 'Montserrat', sans-serif;
-	width: 600px;
-  	margin: 0 auto 20px;
-	
 }
 
 
