@@ -74,7 +74,8 @@ header{
 	background-image:url(../images/optimized-eiffeltower.jpg); 
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 650px;
+	height:100vh;
+	display: flex;
 	width: 100%;	
 	z-index: 1;
 
