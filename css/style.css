@@ -10,7 +10,7 @@ html{
 
 body{
 	-webkit-font-smoothing: subpixel-antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	-osx-font-smoothing: grayscale;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -56,8 +56,8 @@ nav ul li a:hover{
 
 nav.past-main {
     background-color:#000;
-   
-   
+
+
 }
 
 nav ul.past-height{
@@ -65,17 +65,17 @@ nav ul.past-height{
 }
 
 header{
-	
+
 	z-index: 2;
 }
 
 
 .landingsection{
-	background-image:url(../images/optimized-eiffeltower.jpg); 
+	background-image:url(../images/optimized-eiffeltower.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height:100vh;
-	width: 100%;	
+	width: 100%;
 	align-items: center;
  	text-align: center;
 	position: center;
@@ -97,7 +97,7 @@ h1{
 
 
 .aboutsection{
-		
+
 	background-color: white;
 }
 
@@ -106,8 +106,8 @@ h1{
 	height:240px;
 	color:transparent;
 	margin: 0 auto;
-	
-	
+
+
 }
 
 #profilepic{
@@ -117,7 +117,7 @@ h1{
 	border-radius: 50%;
 	text-align: center;
 	background-size: cover;
-	
+
 }
 .aboutme {
 	width: 90%;
@@ -127,7 +127,7 @@ h1{
 }
 
 .skillssection{
-	background-color: #Efefef;	
+	background-color: #Efefef;
 }
 
 .contactsection{
@@ -148,14 +148,14 @@ footer{
 .fa-facebook:hover{
 	font-size: 25px;
 	-webkit-transition: all 0.4s;
-	-moz-transition: all 0.4s;
+	-transition: all 0.4s;
 	transform:rotate(360deg);
 	color: #3a5795;
 }
 .fa-twitter:hover{
 	font-size: 25px;
 	-webkit-transition: all 0.4s;
-	-moz-transition: all 0.4s;
+	transition: all 0.4s;
 	transform:rotate(360deg);
 	color:#55acee;
 }
@@ -163,7 +163,7 @@ footer{
 .fa-linkedin:hover{
 	font-size: 25px;
 	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.4s;	
+	transition: all 0.4s;
 	transform:rotate(360deg);
 	color: #0077B5;
 }
@@ -179,7 +179,7 @@ footer{
 	font-size: 25px;
 	color: #9C27B0;
 	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.4s;
+  transition: all 0.4s;
 	transform:rotate(360deg);
 	-webkit-transform: rotate (5deg);
 }
@@ -223,12 +223,12 @@ footer h3{
 		background-color: #0077B5;
 		height: 50px;
 	}
-	
+
 	nav ul li{
 		display: inline;
 		text-align: center;
 		padding-top: 60px;
-	
+
 	}
 
 	nav ul li a{
