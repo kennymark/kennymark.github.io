@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 *{
 	margin: 0;
 	padding: 0;
@@ -9,9 +11,10 @@ html{
 }
 
 body{
-	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-font-smoothing: antialiased;
 	-osx-font-smoothing: grayscale;
 	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
 }
 
 nav{
@@ -22,6 +25,7 @@ nav{
 	top: 0;
 	background-color: rgba(0, 0, 0, 0.11);
 	transition: all 0.7s ease;
+	z-index: 1;
 }
 
 nav ul{
@@ -40,20 +44,28 @@ nav ul li{
 	text-transform: uppercase;
 	display: inline-block;
 	margin-right: 30px;
+	
 }
 
 nav ul li a{
 	font-size: 20px;
 	color: white;
 	text-decoration: none;
-	font-weight: 300px;
+	font-family: 'Lato', sans-serif;
+	transition: all 0.15s ease;
+	
 }
 
 nav ul li a:hover{
-	text-decoration: underline;
-	transition: all 1s ease;
+	border-bottom: 3px solid coral;
+	padding: 0.5em 0;
+	
 }
-
+nav ul li a:visited{
+	border-bottom: 3px solid coral;
+	padding: 1em 0;
+	position: fixed
+}
 nav.past-main {
     background-color:#000;
 
@@ -61,7 +73,6 @@ nav.past-main {
 }
 
 nav ul.past-height{
-	padding: 25px;
 }
 
 header{
@@ -74,37 +85,36 @@ header{
 	background-image:url(../images/optimized-eiffeltower.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height:100vh;
+	height:90vh;
 	width: 100%;
 	align-items: center;
  	text-align: center;
 	position: center;
-	margin-bottom: 50px;
+	margin-bottom: 70px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	text-align: center;
 
 }
 
 h1{
 	text-transform: uppercase;
-	color: #254648;
+	color: #1A3234;
 	font-size: 55px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 3px;
 }
 
 
 .aboutsection{
 
 	background-color: white;
+	font-weight: 300;
 }
 
 .photocircle{
 	width:240px;
 	height:240px;
-	color:transparent;
 	margin: 0 auto;
 
 
@@ -120,14 +130,18 @@ h1{
 
 }
 .aboutme {
-	width: 90%;
 	margin: auto;
 	line-height: 28px;
     font-size: 20px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #C4B8B8;
+    font-weight: 300;
+	
 }
 
 .skillssection{
-	background-color: #Efefef;
+	background-color: white;
+
 }
 
 .contactsection{
@@ -195,16 +209,17 @@ footer p{
 	text-align:center;
 	font-size: 12.2px;
 	padding-top: 25px;
+	font-weight: 300;
 
 }
 
 footer h3{
 	padding-top: 25px;
-	text-shadow: 0px 1px #181918;
+	font-weight: 500;
 }
 
 .fa-heart{
-	color: #B30303;
+	color: #990000;
 }
 
 
@@ -214,7 +229,7 @@ footer h3{
 	line-height: 50px;
 }
 
-@media screen and (max-width: 460px)  {
+@media screen and (max-width: 560px)  {
 	.fa-bars{
 		visibility: visible;
 	}
