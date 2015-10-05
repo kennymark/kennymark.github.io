@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Linden+Hill);
 
 *{
 	margin: 0;
@@ -23,7 +24,7 @@ nav{
 	text-align: center;
 	position: fixed;
 	top: 0;
-	background-color: rgba(0, 0, 0, 0.11);
+	background-color: #860038;
 	transition: all 0.7s ease;
 	z-index: 1;
 	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.33);
@@ -33,15 +34,6 @@ nav ul{
 	padding: 25px;
 }
 
-.fa-bars{
-	float: left;
-	color: white;
-	visibility: hidden;
-	margin: -10px;
-	font-size: 40px;
-	cursor: pointer;
-	;
-}
 
 nav ul li{
 	text-transform: uppercase;
@@ -55,28 +47,31 @@ nav ul li a{
 	color: white;
 	text-decoration: none;
 	font-family: 'Lato', sans-serif;
-	transition: all 0.15s ease;
+	transition: all 0.2s ease;
+
+	font-weight: 400;
 	
 }
 
 nav ul li a:hover{
 	border-bottom: 3px solid coral;
-	padding: 0.5em 0;
-	
+	padding-bottom: 0.5em ;
+	background-color: #65002A;
+	transform:rotate(5deg );
+
 }
-nav ul li a:visited{
+nav ul li a:selection{
 	border-bottom: 3px solid coral;
 	padding: 1em 0;
-	position: fixed
+	position: fixed;
 }
 nav.past-main {
     background-color:#000;
+    font-color: white;
 
 
 }
 
-nav ul.past-height{
-}
 
 header{
 
@@ -85,10 +80,10 @@ header{
 
 
 .landingsection{
-	background-image:url(../images/optimized-eiffeltower.jpg);
-	
+	background-image:url(../images/work.jpg);
+	background-repeat: no-repeat;
 	background-size: cover;
-	height:90vh;
+	height:95vh;
 	width: 100%;
 	align-items: center;
  	text-align: center;
@@ -97,21 +92,26 @@ header{
 	flex-direction: column;
 	justify-content: center;
 
-
 }
-.landingsection::after{
-	background: black;
+
+.landingsection::before{
+	background-color: black;
 }
 
 h1{
 	
-	color: #1A3234;
+	color: black;
     font-size: 55px;
+    padding: 5px;
     font-family: 'Lato', sans-serif;
     letter-spacing: 3px;
-    text-shadow: 0px 2px;
+    background-color: #FFBC00;
+	font-family: 'Lato', serif;
 }
 
+.intro{
+	margin-right: 175px;
+}
 
 .aboutsection{
 
@@ -164,9 +164,27 @@ h1{
 	padding-top: 40px;
 }
 
-footer{
-	height: 150px;
-	background-color: #5D0335;
+.fa{
+	cursor: pointer;
+}
+
+.fa-angle-double-down{
+	font-size: 35px;
+	color: black;
+	display: flex;
+
+	animation:pulse 0.5s infinite;
+
+}
+
+.fa-bars{
+	float: left;
+	color: white;
+	visibility: hidden;
+	margin: -10px;
+	font-size: 40px;
+	cursor: pointer;
+	;
 }
 
 .fa-facebook:hover{
@@ -208,17 +226,26 @@ footer{
 	-webkit-transform: rotate (5deg);
 }
 
+.fa-git,.fa-tasks, .fa-html5, .fa-css3{
+	color: #2EAEBB;
+}
+
 i{
 	margin-left: 10px;
     margin-right: 10px;
 	color: white;
 }
 
+footer{
+	height: 150px;
+	background-color: #5D0335;
+}
+
 footer p{
 	color: white;
 	text-align:center;
 	font-size: 12.2px;
-	padding-top: 25px;
+	padding-top: 15px;
 	font-weight: 300;
 
 }
@@ -232,6 +259,11 @@ footer h3{
 	color: #990000;
 }
 
+.logo{
+	
+	margin-bottom: 0px;
+	bottom: 0;
+}
 
 .skillstext{
 	font-size: 20px;
@@ -243,12 +275,11 @@ footer h3{
 	color: #7C7272;
 }
 
-.fa-git,.fa-tasks, .fa-html5, .fa-css3{
-	color: #2EAEBB;
-}
+
 ::selection{
-	background: #efefef;
+	background:rgba(26, 50, 52, 0.32);
 }
+
 @media screen and (max-width: 560px)  {
 	.fa-bars{
 		visibility: visible;
@@ -260,7 +291,7 @@ footer h3{
 	}
 
 	nav ul li{
-		display: inline;
+		display: block;
 		text-align: center;
 		padding-top: 60px;
 
@@ -269,4 +300,26 @@ footer h3{
 	nav ul li a{
 		visibility: hidden;
 	}
+
+	h1{
+		background: none;
+		text-align: center;
+		padding: 0px;
+	}
+
+	.landingsection{
+		background-image: url(../images/opteiffeltower.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height:90vh;
+		width: 100%;
+		align-items: center;
+	 	text-align: center;
+		margin-bottom: 55px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+
 }
