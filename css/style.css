@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
 *{
 	margin: 0;
 	padding: 0;
@@ -13,8 +13,8 @@ html{
 body{
 	-webkit-font-smoothing: antialiased;
 	-osx-font-smoothing: grayscale;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-weight: 300;
 }
 
 nav{
@@ -26,6 +26,7 @@ nav{
 	background-color: rgba(0, 0, 0, 0.11);
 	transition: all 0.7s ease;
 	z-index: 1;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.33);
 }
 
 nav ul{
@@ -37,7 +38,9 @@ nav ul{
 	color: white;
 	visibility: hidden;
 	margin: -10px;
-	font-size: 20px;
+	font-size: 40px;
+	cursor: pointer;
+	;
 }
 
 nav ul li{
@@ -83,22 +86,25 @@ header{
 
 .landingsection{
 	background-image:url(../images/optimized-eiffeltower.jpg);
-	background-repeat: no-repeat;
+	
 	background-size: cover;
 	height:90vh;
 	width: 100%;
 	align-items: center;
  	text-align: center;
-	position: center;
-	margin-bottom: 70px;
+	margin-bottom: 55px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 
+
+}
+.landingsection::after{
+	background: black;
 }
 
 h1{
-	text-transform: uppercase;
+	
 	color: #1A3234;
 	font-size: 55px;
 	font-family: 'Lato', sans-serif;
@@ -131,17 +137,20 @@ h1{
 }
 .aboutme {
 	margin: auto;
-	line-height: 28px;
+	line-height: 25px;
     font-size: 20px;
+    padding-top: 50px;
     padding-bottom: 80px;
     border-bottom: 1px solid #C4B8B8;
     font-weight: 300;
+    
 	
 }
 
 .skillssection{
 	background-color: white;
-
+	padding-top: 50px;
+	padding-bottom: 80px;
 }
 
 .contactsection{
@@ -227,6 +236,14 @@ footer h3{
 	font-size: 20px;
 	font-weight: 300px;
 	line-height: 50px;
+}
+
+#text{
+	color: #7C7272;
+}
+
+.fa-git,.fa-tasks, .fa-html5, .fa-css3{
+	color: #2EAEBB;
 }
 
 @media screen and (max-width: 560px)  {
