@@ -99,14 +99,14 @@ header{
 }
 
 h1{
-	
+
 	color: black;
     font-size: 55px;
     padding: 5px;
-    font-family: 'Lato', sans-serif;
     letter-spacing: 3px;
     background-color: #FFBC00;
 	font-family: 'Lato', serif;
+	
 }
 
 .intro{
@@ -172,9 +172,23 @@ h1{
 	font-size: 35px;
 	color: black;
 	display: flex;
+	position: absolute;
+	animation:pulse 0.7s infinite;
+	padding-top: 150px;
+	text-align: center;
+	left: 50%;
 
-	animation:pulse 0.5s infinite;
+}
 
+@keyframes pulse{
+	0%{
+		margin-bottom: 0px;
+
+	}
+
+	100%{
+		margin-top: 10px;
+	}
 }
 
 .fa-bars{
@@ -184,7 +198,6 @@ h1{
 	margin: -10px;
 	font-size: 40px;
 	cursor: pointer;
-	;
 }
 
 .fa-facebook:hover{
@@ -194,11 +207,12 @@ h1{
 	transform:rotate(360deg);
 	color: #3a5795;
 }
+
 .fa-twitter:hover{
 	font-size: 25px;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
-	transform:rotate(360deg);
+	transform: rotate(360deg);
 	color:#55acee;
 }
 
@@ -206,7 +220,7 @@ h1{
 	font-size: 25px;
 	-webkit-transition: all 0.5s;
 	transition: all 0.4s;
-	transform:rotate(360deg);
+	transform: rotate(360deg);
 	color: #0077B5;
 }
 
@@ -239,6 +253,8 @@ i{
 footer{
 	height: 150px;
 	background-color: #5D0335;
+	position: absolute;
+	width: 100%;
 }
 
 footer p{
@@ -247,6 +263,7 @@ footer p{
 	font-size: 12.2px;
 	padding-top: 15px;
 	font-weight: 300;
+	position: static;
 
 }
 
@@ -305,21 +322,28 @@ footer h3{
 		background: none;
 		text-align: center;
 		padding: 0px;
+		align-items: center;
+		clear: both;
+		justify-content: center;
+
 	}
 
 	.landingsection{
 		background-image: url(../images/opteiffeltower.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
-		height:90vh;
+		height:80vh;
 		width: 100%;
 		align-items: center;
 	 	text-align: center;
 		margin-bottom: 55px;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 
+	}
+
+	.fa-angle-double-down{
+		visibility: hidden;
 	}
 
 }

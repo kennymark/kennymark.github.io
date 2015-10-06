@@ -1,14 +1,13 @@
-var mainbottom = $('#main').offset().top + $('#main').height();
+function smoothScroll (duration) {
+	$('a[href^="#"]').on('click', function(event) {
 
-// on scroll, 
-$(window).on('scroll',function(){
+	    var target = $( $(this).attr('href') );
 
-    // we round here to reduce a little workload
-    stop = Math.round($(window).scrollTop());
-    if (stop > mainbottom) {
-        $('.nav').addClass('past-main');
-    } else {
-        $('.nav').removeClass('past-main');
-   }
-
-});
+	    if( target.length ) {
+	        event.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: target.offset().top
+	        }, duration);
+	    }
+	});
+}
