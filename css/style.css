@@ -258,7 +258,7 @@ footer{
 }
 
 footer p{
-	color: white;
+	color: #D2D0D0;
 	text-align:center;
 	font-size: 12.2px;
 	padding-top: 15px;
@@ -303,7 +303,7 @@ footer h3{
 	}
 
 	nav{
-		background-color: #0077B5;
+		
 		height: 50px;
 	}
 
@@ -323,8 +323,8 @@ footer h3{
 		text-align: center;
 		padding: 0px;
 		align-items: center;
-		clear: both;
-		justify-content: center;
+		position: static;
+		
 
 	}
 
@@ -337,8 +337,6 @@ footer h3{
 		align-items: center;
 	 	text-align: center;
 		margin-bottom: 55px;
-		display: flex;
-		flex-direction: column;
 
 	}
 
