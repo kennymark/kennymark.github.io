@@ -80,7 +80,7 @@ header{
 
 
 .landingsection{
-	background-image:url(../images/work.jpg);
+	background-image:url(../images/work3.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height:95vh;
@@ -170,7 +170,7 @@ h1{
 
 .fa-angle-double-down{
 	font-size: 35px;
-	color: black;
+	color: coral;
 	display: flex;
 	position: absolute;
 	animation:pulse 0.7s infinite;
