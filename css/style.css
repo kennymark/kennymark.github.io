@@ -24,10 +24,9 @@ nav{
 	text-align: center;
 	position: fixed;
 	top: 0;
-	background-color: #860038;
+	background-color: #00B291;
 	transition: all 0.7s ease;
 	z-index: 1;
-	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.33);
 }
 
 nav ul{
@@ -66,7 +65,7 @@ nav ul li a:selection{
 	position: fixed;
 }
 nav.past-main {
-    background-color:#000;
+    background-color:#0A0A0A;
     font-color: white;
 
 
@@ -83,11 +82,10 @@ header{
 	background-image:url(../images/work.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height:95vh;
+	height:100vh;
 	width: 100%;
 	align-items: center;
  	text-align: center;
-	margin-bottom: 55px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -104,7 +102,7 @@ h1{
     font-size: 55px;
     padding: 5px;
     letter-spacing: 3px;
-    background-color: #FFBC00;
+    background-color: #FED400;
 	font-family: 'Lato', serif;
 	
 }
@@ -114,8 +112,8 @@ h1{
 }
 
 .aboutsection{
-
-	background-color: white;
+	padding-top: 55px;
+	background-color: #00B291;
 	font-weight: 300;
 }
 
@@ -128,52 +126,64 @@ h1{
 }
 
 #profilepic{
-	height: 250px;
-	width: 230px;
-	background-size: cover;
+	height: 225px;
 	border-radius: 50%;
 	text-align: center;
 	background-size: cover;
+	float: right;
 
 }
 .aboutme {
 	margin: auto;
-	line-height: 25px;
-    font-size: 20px;
-    padding-top: 50px;
+	line-height: 30px;
+    font-size: 22px;
+    padding-top: 30px;
     padding-bottom: 80px;
-    border-bottom: 1px solid #C4B8B8;
     font-weight: 300;
-    
+    width: 80%; 
 	
+}
+.padding{
+	padding: 70px 50 0 0;
 }
 
 .skillssection{
-	background-color: white;
+	background-color: #0E212C;
 	padding-top: 50px;
 	padding-bottom: 80px;
 }
 
 .contactsection{
 	height: 500px;
-	background-color: #2EAEBB;
+	background-color: white;
 }
-
+.content{
+	background-size: cover;
+}
+.projectsection{
+	height: 100%;
+	background-color: #2EAEBB;
+	padding-bottom: 50px;
+}
+.project{
+	padding-bottom: 50px;
+	margin-right: 20px;
+}
 .icons{
 	text-align: center;
-	padding-top: 40px;
+	padding-top: 30px;
 }
 
 .fa{
 	cursor: pointer;
 }
 
-.fa-angle-double-down{
-	font-size: 35px;
-	color: coral;
+.fa-chevron-circle-down{
+	
+	color: #00B291;
 	display: flex;
 	position: absolute;
-	animation:pulse 0.7s infinite;
+	animation:pulse 0.9s ;
 	padding-top: 150px;
 	text-align: center;
 	left: 50%;
@@ -224,16 +234,16 @@ h1{
 	color: #0077B5;
 }
 
-.fa-envelope:hover{
+.fa-paper-plane-o:hover{
 	font-size: 25px;
 	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.4s;
-	transform:rotate(360deg);
-	color: black;
+	transition: all 0.5s;
+	transform:rotate(720deg);
+	color: #01D4A5;
 }
 .fa-github:hover{
 	font-size: 25px;
-	color: #9C27B0;
+	color: grey;
 	-webkit-transition: all 0.3s;
   transition: all 0.4s;
 	transform:rotate(360deg);
@@ -241,7 +251,7 @@ h1{
 }
 
 .fa-git,.fa-tasks, .fa-html5, .fa-css3{
-	color: #2EAEBB;
+	color: #00B291;
 }
 
 i{
@@ -252,7 +262,7 @@ i{
 
 footer{
 	height: 150px;
-	background-color: #5D0335;
+	background-color: #0A0A0A;
 	position: absolute;
 	width: 100%;
 }
@@ -264,12 +274,15 @@ footer p{
 	padding-top: 15px;
 	font-weight: 300;
 	position: static;
+	letter-spacing: 1px;
 
 }
 
 footer h3{
-	padding-top: 25px;
+	padding-top: 22px;
 	font-weight: 500;
+	color:white;
+	letter-spacing: 1px;
 }
 
 .fa-heart{
@@ -289,7 +302,7 @@ footer h3{
 }
 
 #text{
-	color: #7C7272;
+	color: white;
 }
 
 
@@ -297,7 +310,7 @@ footer h3{
 	background:rgba(26, 50, 52, 0.32);
 }
 
-@media screen and (max-width: 560px)  {
+@media screen and (max-width: 768px)  {
 	.fa-bars{
 		visibility: visible;
 	}
@@ -331,17 +344,23 @@ footer h3{
 	.landingsection{
 		background-image: url(../images/opteiffeltower.jpg);
 		background-repeat: no-repeat;
+		background-position: center;
 		background-size: cover;
-		height:80vh;
+		height:100vh;
 		width: 100%;
 		align-items: center;
 	 	text-align: center;
-		margin-bottom: 55px;
-
+		
 	}
 
-	.fa-angle-double-down{
+	.fa-chevron-circle-down{
 		visibility: hidden;
 	}
 
+	h1{
+		text-align: left;
+		display: inline-block;
+		text-transform: uppercase;
+		color:white;
+	}
 }
