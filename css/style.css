@@ -119,8 +119,7 @@ h1{
 }
 
 .photocircle{
-	width:240px;
-	height:240px;
+	text-align: center;
 	margin: 0 auto;
 
 
@@ -129,9 +128,7 @@ h1{
 #profilepic{
 	height: 225px;
 	border-radius: 50%;
-	text-align: center;
-	background-size: cover;
-	float: right;
+
 
 }
 .aboutme {
@@ -184,16 +181,18 @@ h1{
 	color: #00B291;
 	display: flex;
 	position: absolute;
-	animation:pulse 0.9s ;
+	animation:pulse 0.7s ;
 	padding-top: 150px;
 	text-align: center;
 	left: 50%;
+	animation-iteration-count: 8;
+
 
 }
 
 @keyframes pulse{
 	0%{
-		margin-bottom: 0px;
+		margin-bottom: 5px;
 
 	}
 
