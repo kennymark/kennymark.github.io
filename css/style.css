@@ -253,8 +253,7 @@ h1{
 }
 
 .fa-git,.fa-tasks, .fa-html5, .fa-css3{
-	color: #00B291;
-}
+	color: white;
 
 i{
 	margin-left: 10px;
@@ -339,8 +338,6 @@ footer h3{
 		padding: 0px;
 		align-items: center;
 		position: static;
-		
-
 	}
 
 	.landingsection{
