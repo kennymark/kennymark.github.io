@@ -90,7 +90,6 @@ header{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-position: center;
 
 }
 
@@ -148,7 +147,7 @@ h1{
 }
 
 .skillssection{
-	background-color: #EB7155;
+	background-color: #0E212C;
 	padding-top: 50px;
 	padding-bottom: 80px;
 }
@@ -162,7 +161,7 @@ h1{
 }
 .projectsection{
 	height: 100%;
-	background-color: #C6415A;
+	background-color: #2EAEBB;
 	padding-bottom: 50px;
 }
 .project{
