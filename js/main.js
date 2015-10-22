@@ -1,13 +1,7 @@
-function smoothScroll (duration) {
-	$('a[href^="#"]').on('click', function(event) {
-
-	    var target = $( $(this).attr('href') );
-
-	    if( target.length ) {
-	        event.preventDefault();
-	        $('html, body').animate({
-	            scrollTop: target.offset().top
-	        }, duration);
-	    }
-	});
-}
+$(".intro").flipping_text({
+    tickerTime: 10,
+    customRandomChar: false,
+    tickerCount: 10,
+    opacityEffect: true,
+    resetOnChange: false
+  });
