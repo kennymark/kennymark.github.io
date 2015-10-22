@@ -15,10 +15,11 @@
 
 nav{
 	height: 70px;
-    background-color: #060606;
+    background-color: rgba(255, 255, 255, 0.85);
     top: 0;
     position: fixed;
     width: 100%;
+    border-bottom: 1px solid #D7CECE;
 }
 
 
@@ -34,7 +35,7 @@ nav{
     text-transform: capitalize;
     text-decoration: none;
     display: inline-block;
-    color: #FFFFFF;
+    color: #41A8C6;
     margin-right: 20px;
     font-family: 'Lato';
     padding: 22px 0 22px 5px;
@@ -70,7 +71,7 @@ nav{
 	font-weight: 700;
 	margin: auto;
 	color: white;
-	background-color: black;
+	background-color: #2D6A86;
 	letter-spacing: 3px;
 	padding: 5px 10px;
 	transition: all 0.7s cubic-bezier(0, 0, 0.2, 1);
@@ -198,7 +199,7 @@ label{
 	display: block;
 	margin-top: 50px;
 	text-align: inherit;
-	color: #474747;
+	color: #41A8C6;
 	padding-left: -150px
 }
 
@@ -207,7 +208,6 @@ input{
 	border-bottom: 2px solid #222;
 	padding-top: 20px;
 	width: 350px;
-	color: grey;
 	font-size: 18px;
 	font-family: 'Lato',sans-serif;
 	font-weight: 300;
