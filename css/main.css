@@ -35,7 +35,7 @@ nav{
     text-transform: capitalize;
     text-decoration: none;
     display: inline-block;
-    color: #1C4355;
+    color: #41A8C6;
     margin-right: 20px;
     font-family: 'Lato';
     padding: 22px 0 22px 5px;
@@ -45,7 +45,7 @@ nav{
 
 }
 .links a:hover{
-	color: #41A8C6;
+	color: #1C4355;
 }
 
 
