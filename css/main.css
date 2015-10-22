@@ -15,7 +15,7 @@
 
 nav{
 	height: 70px;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.90);
     top: 0;
     position: fixed;
     width: 100%;
@@ -35,7 +35,7 @@ nav{
     text-transform: capitalize;
     text-decoration: none;
     display: inline-block;
-    color: #41A8C6;
+    color: #1C4355;
     margin-right: 20px;
     font-family: 'Lato';
     padding: 22px 0 22px 5px;
@@ -71,7 +71,7 @@ nav{
 	font-weight: 700;
 	margin: auto;
 	color: white;
-	background-color: #2D6A86;
+	background-color: #1C4355;
 	letter-spacing: 3px;
 	padding: 5px 10px;
 	transition: all 0.7s cubic-bezier(0, 0, 0.2, 1);
@@ -137,7 +137,7 @@ h2{
 	padding-bottom: 100px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	color: #646464;
+	color: #1C4355;
 	margin: auto;
 	width: 70%;
 }
@@ -199,7 +199,7 @@ label{
 	display: block;
 	margin-top: 50px;
 	text-align: inherit;
-	color: #41A8C6;
+	color: #6A6A6A;
 	padding-left: -150px
 }
 
