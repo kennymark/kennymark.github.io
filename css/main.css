@@ -1,0 +1,314 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+*{
+	margin:0;
+	padding: 0;
+}
+
+.body{
+	font-family: 'Lato',sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+nav{
+	height: 70px;
+    background-color: #060606;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+
+.links{
+	width: 90%;
+	clear: both;
+	margin: auto;
+	text-align: center;
+	
+}
+
+.links a{
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+    color: #FFFFFF;
+    margin-right: 20px;
+    font-family: 'Lato';
+    padding: 22px 0 22px 5px;
+    font-weight: 300;
+    font-size: 1.3em;
+    float: left;
+
+}
+.links a:hover{
+	color: #41A8C6;
+}
+
+
+.jumbotron{
+	background-color: #e1e1e1;
+	height: 90vh;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: auto;
+	background-image: url(../img/bg.jpg);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+   
+}
+
+.intro{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 70px;
+	font-weight: 700;
+	margin: auto;
+	color: white;
+	background-color: black;
+	letter-spacing: 3px;
+	padding: 5px 10px;
+	transition: all 0.7s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.intro:hover{
+	background: white;
+	color:black;
+	cursor: move;
+}
+
+.jumbotron h5{
+	font-family: 'Montserrat', Helvetica;
+	font-size: 25px;
+	border-bottom: 2px solid black;
+	color: coral;
+	float: right;
+}
+
+.aboutsection{
+	
+	
+}
+
+
+
+.aboutsection h2 ,.skillssection h2{
+	text-align: center;
+	padding-top: 70px;
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+	color: #474747;
+	padding-bottom: 3px;
+	border-bottom: 3px solid;
+	width: 17%;
+	margin: auto;
+}
+
+h2{
+	text-align: center;
+	padding-top: 50px;
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+	padding-bottom: 3px;
+	border-bottom: 3px solid;
+	width: 150px;
+	margin: auto
+}
+
+.profilepic{
+	background-image: url(../img/profilepic.jpg);
+	height: 200px;
+	width: 195px;
+	margin: 70px auto;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+	text-align: center;
+	
+}
+
+.description{
+	padding-bottom: 100px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #646464;
+	margin: auto;
+	width: 70%;
+}
+
+.description p{
+	line-height: 34px; 
+	font-size: 22px;
+
+}
+
+.skillssection{
+	background-color: #2D6A86;
+	position: relative;
+}
+
+.porfoliosection{
+	background:#41A8C6;
+	margin: auto;
+	text-align: auto;
+	position: relative;
+}
+.project{
+	
+	height: 450px;
+	text-align: center;
+	margin: auto;
+	padding:50px 0;
+	margin-bottom: 150px;
+}
+.skill{
+	color: white;
+	font-family: 'Lato',sans-serif;
+	padding: 100px 0;
+	font-size: 20px;
+	font-weight:300;
+	line-height: 32px;
+}
+.contactsection{
+	margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+li{
+	line-height: 40px;
+	display: block;
+}
+form{
+	margin: 70px auto;
+	align-items:center;
+	
+    
+}
+label{
+	font-size: 22px;
+	font-family: 'Lato',sans-serif;
+	display: block;
+	margin-top: 50px;
+	text-align: inherit;
+	color: #474747;
+	padding-left: -150px
+}
+
+input{
+	border:0px;
+	border-bottom: 2px solid #222;
+	padding-top: 20px;
+	width: 350px;
+	color: grey;
+	font-size: 18px;
+	font-family: 'Lato',sans-serif;
+	font-weight: 300;
+}
+input[type="message"]{
+	border-left:2px solid #333;
+	width: 450px;
+	height: 300px;
+	border-bottom: 0;
+	text-align: center;
+}
+
+.msg{
+	margin:auto;
+	text-align: center;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: #060606;
+    margin: 20px auto 100px auto;
+    width: 90px;
+    height: 40px;
+    padding: 1px 0px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+
+input::selection{
+	color:white;
+	
+}
+.footer{
+	background-color: #131313;
+	height: 120px;
+	clear: both;
+}
+
+.social{
+	text-align: center;
+	color: #C6C6C6;
+	font-size: 25px;
+	padding-top: 30px;
+}
+.social p{
+	text-align: center;
+	color: #C6C6C6;
+	font-size: 15px;
+	padding-top: 10px;
+	letter-spacing: 1px;
+	font-family: 'Lora';
+}
+.subfooter{
+	height: 50px;
+	background-color: #060606;
+	color: grey;
+	text-align: center;
+	clear: both;
+}
+
+.subfooter p{
+	padding-top: 17px;
+	text-transform: capitalize;
+    font-family: 'Lora';
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 2px;
+   
+}
+
+
+/*==========ICONS=======================*/
+
+.zmdi-twitter,.zmdi-github,.zmdi-linkedin-box,
+.zmdi-email-open
+{
+	color:#C6C6C6;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+
+.zmdi-favorite{
+	color: #AB3939;
+	font-size: 23px;
+	padding-top: 5px;
+}
+
+.zmdi:hover{
+	transform: rotate(360deg);
+}
+
+/*====================================*/
+::selection {
+	background-color: rgba(6, 6, 6, 0.58);
+	color:white;
+}
+
+::-moz-selection{
+	background-color: rgba(6, 6, 6, 0.58);
+	color:white;
+}
