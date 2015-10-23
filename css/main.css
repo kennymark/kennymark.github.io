@@ -14,7 +14,7 @@
 }
 
 nav{
-	height: 70px;
+	height: 60px;
     background-color: rgba(255, 255, 255, 0.95);
     top: 0;
     position: fixed;
@@ -38,7 +38,7 @@ nav{
     color: #727272;
     margin-right: 15px;
     font-family: 'Ubuntu';
-    padding: 25px 0 ;
+    padding: 20px 0 ;
     font-weight: 300;
     font-size: 1.2em;
     float: left;
@@ -47,6 +47,7 @@ nav{
 .links a:hover{
 	color: #1C4355;
 	transition:all 0.5s ease;
+	font-weight: 400;
 }
 
 
@@ -193,12 +194,16 @@ input{
 	font-family: 'Ubuntu',sans-serif;
 	font-weight: 300;
 }
-input[type="message"]{
+textarea{
 	border-left:2px solid #333;
 	width: 450px;
 	height: 300px;
 	border-bottom: 0;
-	text-align: center;
+	border-top: 0;
+	border-right: 0;
+	font-family: 'Ubuntu';
+	padding:40;
+	font-size: 18px;
 }
 
 .msg{
@@ -273,6 +278,21 @@ input::selection{
 
 .zmdi-chevron-down{
 	color: white;
+	animation:pulse 0.9s ;
+	-webkit-animation-iteration-count: 16; /* Chrome, Safari, Opera */
+	animation-iteration-count: 16;
+}
+
+
+@keyframes pulse{
+	0%{
+		margin-bottom: 0px;
+
+	}
+
+	100%{
+		margin-top: 10px;
+	}
 }
 
 .zmdi-favorite{
@@ -302,6 +322,11 @@ input::selection{
 
 @media screen (max-width: 600px){
 	.headersection h1{
-		margin-top: 450px;
+		font-size: 32px;
+	}
+
+	.links a{
+		float: right;
+		display: block;
 	}
 }

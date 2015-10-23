@@ -6,10 +6,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="js/main.js">
 	<link rel="stylesheet" href="css/simplegrid.css">
-	<link rel="stylesheet" href="css/flickity.css"  media="screen">
-	<script src="js/flickity.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/flipping_text.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    
 
 </head>
@@ -18,10 +16,10 @@
 
 		<div class="links">
 			
-			<a href="#">about</a>
-			<a href="#">Skills</a>
-			<a href="#">porfolio</a>
-			<a href="#">Contact</a>
+			<a href="#about" >about</a>
+			<a href="#skills">Skills</a>
+			<a href="#portfolio" >porfolio</a>
+			<a href="#contact">Contact</a>
 			
 		</div>
 	</nav>
@@ -32,97 +30,107 @@
 			<h1 style="font-size:32px;">Web Designer// Front End Developer/></h1>
 		</div>
 		
-	<i class="zmdi zmdi-chevron-down" style="font-size:38px; padding-top:20px;"></i>
+	<a href="#about"><i class="zmdi zmdi-chevron-down" style="font-size:38px; padding-top:20px;     position: absolute;"></i></a>
 		
 	</div>
 	
-	<div class="aboutsection">
+	<a name="about">
+		<div class="aboutsection">
 
-		<h2 style="color:#1C4355;">About Me</h2> 
+			<h2 style="color:#1C4355;">About Me</h2> 
 
-		<div class="profilepic">
-		
-		</div>
-		<div class="description">
-			<p>
-				Currently a student in college studying Computing and Systems Development at Liverpool College, Liverpool. I'm a freelance junior web developer by night and student by day. Websign is my main focus even though I love everything about user interaction design and user experience on the web. I have worked on several personal projects including my this website which I designed and developed in less than 20 hours of work combined. I am minimalist when it comes to the web, and	 and like the cliche goes, sometimes "Less is More".</p>
-		</div>
-				
-	</div>
-
-	<div class="skillssection">
-		<h2 style="color:white">Skills + Details</h2> 
-		<div class="grid grid-pad center">
-			<div class="col-1-2">
-				<ul class="skill">
-					<li>Git</li>
-					<li>Html5</li>
-					<li>CSS3</li>
-					<li>Javascript</li>
-					<li>Jquery</li>
-					<li>Photoshop</li>
-				</ul>
-			</div>
-
-			<div class="col-1-2">
-				<div class="content">
-					<p class="skill">
-					I am currently a junior developer working my way up to be a mid-level developer very soon. I actively spend many hours per day writing web code to perfect my skills. I am really passionate about web development hence the effort I put in. Skill wise, I can practically build any type of website with a good modern and responsive design that doesn't complex interactions between the browser and a server. 
-				</p>
-				</div>
-				
-			</div>
-		</div>
-
-		
-	</div>
-	
-	<div class="porfoliosection">
-		<h2 style="color:white";>Portfolio</h2>
-		
-		<div class="grid">
-			<div class="col-1-2 project">
-				<img src="img/davon.png" style="height:400px; width:100%;">
-			</div>
-
-			<div class="col-1-2 project"><img src="img/placeholder.PNG" style="height:400px; width:100%;"></div>
-		</div>
-	
-	</div>
-
-	<div class="contactsection">
-		<h2 style="text-align: center;color:#1C4355;">Contact Me</h2>
-		<div class="grid gridpad">
-		
-			<div class="col-1-2">
-				<form action="//formspree.io/markcoffiekenneth@gmail.com" method="POST">
-					<label for="">Subject</label>
-					<input type="text" placeholder="Hi">
-					<label for="">Name</label>
-					<input type="text" placeholder="Your Name">
-					<label for="">Email</label>
-					<input type="email"  name="_replyto" placeholder="example@gmail.com">
-
-				</form>
-			</div>
-
-			<div class="col-1-2">
-				<form action="//formspree.io/markcoffiekenneth@gmail.com" method="POST">
-					<label for="" class="msg">Message</label>
-					<input type="message" placeholder="Message" >
-					
-				</form>
-			</div>
-
+			<div class="profilepic">
 			
-		</div>
+			</div>
+			<div class="description">
+				<p>
+					Currently a student in college studying Computing and Systems Development at Liverpool College, Liverpool. I'm a freelance junior web developer by night and student by day. Websign is my main focus even though I love everything about user interaction design and user experience on the web. I have worked on several personal projects including my this website which I designed and developed in less than 20 hours of work combined. I am minimalist when it comes to the web, and	 and like the cliche goes, sometimes "Less is More".</p>
+			</div>
+					
+		</div>		
+	</a>
 
-		<form action="//formspree.io/markcoffiekenneth@gmail.com" method="POST">
-			<input type="submit" value="Send">
-		</form>
 
+	<a name="skills">
+		<div class="skillssection">
+			<h2 style="color:white">Skills + Details</h2> 
+			<div class="grid grid-pad center">
+				<div class="col-1-2">
+					<ul class="skill">
+						<li>Git</li>
+						<li>Html5</li>
+						<li>CSS3</li>
+						<li>Javascript</li>
+						<li>Jquery</li>
+						<li>Photoshop</li>
+					</ul>
+				</div>
+
+				<div class="col-1-2">
+					<div class="content">
+						<p class="skill">
+						I am currently a junior developer working my way up to be a mid-level developer very soon. I actively spend many hours per day writing web code to perfect my skills. I am really passionate about web development hence the effort I put in. Skill wise, I can practically build any type of website with a good modern and responsive design that doesn't complex interactions between the browser and a server. 
+					</p>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>		
+	</a>
+
+
+	<a name="portfolio">
+		<div class="porfoliosection">
+			<h2 style="color:white";>Portfolio</h2>
+			
+			<div class="grid">
+				<div class="col-1-2 project">
+					<img src="img/davon.png" style="height:400px; width:100%;">
+				</div>
+
+				<div class="col-1-2 project"><img src="img/placeholder.PNG" style="height:400px; width:100%;"></div>
+			</div>
 		
-	</div>
+		</div>		
+	</a>
+
+
+	<a name="contact">
+		<div class="contactsection">
+			<h2 style="text-align: center;color:#1C4355;">Contact Me</h2>
+			<div class="grid gridpad">
+			
+				<div class="col-1-2">
+					<form action="//formspree.io/markcoffiekenneth@gmail.com" method="POST">
+						<label for="">Subject</label>
+						<input type="hidden name="_subject"  placeholder="Hi" "/>
+						<label for="">Name</label>
+						<input type="text" name="name" placeholder="Your Name">
+						<label for="">Email</label>
+						<input type="email"  name="_replyto" placeholder="example@gmail.com">
+						<input type="hidden" name="_next" value="thanks.html"/>
+
+					</form>
+				</div>
+
+				<div class="col-1-2">
+					<form action="//formspree.io/markcoffiekenneth@gmail.com" method="POST">
+						<label class="msg">Message</label>
+						<textarea name="message" rows="7" placeholder="Your message"></textarea>
+						
+					</form>
+				</div>
+
+				
+			</div>
+
+			<form action="//formspree.io/markcoffiekenneth@gmail.com" method="POST">
+				<input type="submit" value="Send">
+			</form>	
+		</div>		
+	</a>
+
 
 	<div class="footer">
 		<div class="social">
@@ -149,5 +157,24 @@
 		    resetOnChange: false
 		  });
 	</script>
+
+	<script>
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 750);
+		        return false;
+		      }
+		    }
+		  });
+		});
+	</script>
+
+	
 </body>
 </html>
