@@ -102,7 +102,7 @@
 			<div class="grid gridpad">
 			
 				<div class="col-1-2">
-					<form action="//formspree.io/markcoffiekenneth@gmail.com" method="POST">
+					<form action="contactHandler.php" method="POST">
 						<label for="">Subject</label>
 						<input type="hidden name="_subject"  placeholder="Hi" "/>
 						<label for="">Name</label>
@@ -115,7 +115,7 @@
 				</div>
 
 				<div class="col-1-2">
-					<form action="//formspree.io/markcoffiekenneth@gmail.com" method="POST">
+					<form action="contactHandler.php" method="POST">
 						<label class="msg">Message</label>
 						<textarea name="message" rows="7" placeholder="Your message"></textarea>
 						
@@ -125,7 +125,7 @@
 				
 			</div>
 
-			<form action="//formspree.io/markcoffiekenneth@gmail.com" method="POST">
+			<form action="contactHandler.php" method="POST">
 				<input type="submit" value="Send">
 			</form>	
 		</div>		
@@ -147,16 +147,6 @@
 	 	<p>all content copyright &copy Kenneth Mark coffie 2015</p>
 	 </div>
 		
-	<script>
-
-		$(".intro").flipping_text({
-		    tickerTime: 50,
-		    customRandomChar: false,
-		    tickerCount: 4,
-		    opacityEffect: true,
-		    resetOnChange: false
-		  });
-	</script>
 
 	<script>
 		$(function() {
@@ -174,7 +164,17 @@
 		  });
 		});
 	</script>
+	
+	<script>
 
+		$(".intro").flipping_text({
+		    tickerTime: 50,
+		    customRandomChar: false,
+		    tickerCount: 4,
+		    opacityEffect: true,
+		    resetOnChange: false
+		  });
+	</script>
 	
 </body>
 </html>
