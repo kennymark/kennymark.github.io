@@ -57,11 +57,14 @@ nav{
 	background-attachment: fixed;
 	background-position: center;
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox; 
     display: flex;
     flex-direction:column;
     align-items:center;
     justify-content: center;
     background-image: url(../img/back.jpg);
+    width: 100%;
 }
 
 .intro1{
@@ -275,7 +278,18 @@ input::selection{
 	margin-right: 20px;
 	cursor: pointer;
 }
-
+.zmdi-menu{
+	padding: 20px 0 ;
+    font-weight: 300;
+    font-size: 1.5em;
+    float: right;
+    color: grey;
+    visibility: hidden;
+    cursor: pointer;
+}
+.zmdi-menu:hover{
+	color: black;
+}
 .zmdi-chevron-down{
 	color: white;
 	animation:pulse 0.9s ;
@@ -320,13 +334,24 @@ input::selection{
 	color:white;
 }
 
-@media screen (max-width: 600px){
+@media  (max-width: 500px){
 	.headersection h1{
-		font-size: 32px;
+		font-size: 42px;
+
 	}
 
 	.links a{
 		float: right;
 		display: block;
+		visibility: hidden;
+	}
+	.headersection{
+		height: 500px;
+	}
+
+	
+
+	.zmdi-menu{
+		visibility: visible;
 	}
 }
