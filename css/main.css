@@ -11,7 +11,7 @@
 
 .body{
 	font-family: 'Ubuntu', sans-serif;
-	-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
@@ -88,7 +88,9 @@ nav{
     font-size: 40px;
     padding-bottom: 20px;
 }
-
+.aboutsection{
+	background: rgba(242, 242, 242, 0.48) none repeat scroll 0% 0%;
+}
 .aboutsection h2 ,.skillssection h2{
 	text-align: center;
 	padding-top: 40px;
@@ -139,15 +141,7 @@ h2{
 
 .skillssection{
 	background-color:rgba(239, 239, 239, 1);
-	display: flex;
-	-webkit-flex-direction:column;
-	-moz-flex-direction:column;
-	-ms-flex-direction::column;
-	-o-flex-direction::column;
-	flex-direction::column;
-	justify-content:center
-	-ms-align-items: center;
-	align-items: center;
+	
 }
 
 .explain{
