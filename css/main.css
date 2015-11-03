@@ -1,7 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,500,700);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Niconne);
 *{
 	margin:0;
 	padding: 0;
@@ -15,11 +17,10 @@
 
 nav{
 	height: 60px;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: white;
     top: 0;
     position: fixed;
     width: 100%;
-    border-bottom: 1px solid #D7CECE;
 }
 
 
@@ -37,8 +38,8 @@ nav{
     display: inline-block;
     color: #727272;
     margin-right: 15px;
-    font-family: 'Ubuntu';
-    padding: 20px 0 ;
+    font-family: 'lato';
+    padding: 20px 0 2px 0 ;
     font-weight: 300;
     font-size: 1.2em;
     float: left;
@@ -50,9 +51,11 @@ nav{
 	font-weight: 400;
 }
 
-
+.links a:active{
+	border-bottom: 1px solid #727272;
+}
 .headersection{
-	height: 85vh;
+	height: 90vh;
 	background-color: #32749b;
 	background-attachment: fixed;
 	background-position: center;
@@ -67,19 +70,23 @@ nav{
     width: 100%;
 }
 
-.intro1{
-	
 
-}
 
 .headersection h1{
 	text-align: center;
-	font-family: 'Ubuntu';
 	color: white;
-	background-size: cover;
 	letter-spacing: 1px;
+}
+
+.intro{
+	font-family: 'Ubuntu';
 	font-size: 80px;
-	padding: 4px 8px;
+}
+
+.intro1{
+    font-family: 'Niconne', cursive;
+    font-size: 40px;
+    padding-bottom: 20px;
 }
 
 .aboutsection h2 ,.skillssection h2{
@@ -118,34 +125,48 @@ h2{
 
 .description{
 	padding-bottom: 70px;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	color: #727272;
 	margin: auto;
 	width: 70%;	
 	line-height: 32px;
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: 0.1px;
 
 }
 
 
 .skillssection{
-	background-color: #1a1a1a;
-	
+	background-color:rgba(239, 239, 239, 1);
+	display: flex;
+	-webkit-flex-direction:column;
+	-moz-flex-direction:column;
+	-ms-flex-direction::column;
+	-o-flex-direction::column;
+	flex-direction::column;
+	justify-content:center
+	-ms-align-items: center;
+	align-items: center;
 }
 
+.explain{
+	background: #1a1a1a;
+
+}
+
+.explain {
+	color: white;
+	background-size: cover;
+	background-position: center;
+}
 .porfoliosection{
 	background:#32749B;
 	margin: auto;
 	position: relative;
 }
 
-.center{
-	margin:auto;
-	align-items:center;
-	justify-content:centerS;
-}
+
 .project{
 	
 	height: 450px;
@@ -155,12 +176,13 @@ h2{
 	margin-bottom: 80px;
 }
 .skill{
-	color: #D5D5D5;
-	font-family: 'Ubuntu',sans-serif;
-	padding: 50px 0;
-	font-size: 20px;
+	color: #2a2a2a;
+	font-family: 'Lato',sans-serif;
+	padding: 50px 150px;
+	font-size: 22px;
 	font-weight:300;
 	line-height: 32px;
+	;
 }
 .contactsection{
 	margin: auto;
@@ -169,10 +191,22 @@ h2{
     justify-content:center;
 }
 
+.skilldescription{
+	width: 60%;
+	margin: auto;
+	padding: 80px 0;
+	font-family: 'Lato',sans-serif;
+	line-height: 32px;
+	font-size: 22px;
+	font-weight: 300;
+}
+
 li{
 	line-height: 40px;
 	display: block;
+    color: #727272;
 }
+
 form{
 	margin: 70px auto;
 	align-items:center;
@@ -181,7 +215,7 @@ form{
 }
 label{
 	font-size: 22px;
-	font-family: 'Ubuntu',sans-serif;
+	font-family: 'Lato',sans-serif;
 	display: block;
 	margin-top: 50px;
 	text-align: inherit;
@@ -195,7 +229,7 @@ input{
 	padding-top: 20px;
 	width: 350px;
 	font-size: 18px;
-	font-family: 'Ubuntu',sans-serif;
+	font-family: 'Lato',sans-serif;
 	font-weight: 300;
 }
 textarea{
@@ -205,7 +239,7 @@ textarea{
 	border-bottom: 0;
 	border-top: 0;
 	border-right: 0;
-	font-family: 'Ubuntu';
+	font-family: 'Lato';
 	padding:40;
 	font-size: 18px;
 }
@@ -218,15 +252,20 @@ textarea{
 input[type="submit"]{
     color: white;
     background-color: #060606;
-    margin: 20px auto 100px auto;
+    margin: 20px auto 80px auto;
     width: 90px;
     height: 40px;
     padding: 1px 0px;
     cursor: pointer;
     border-radius: 3px;
     font-size: 20px;
+    
 }
 
+input:focus, textarea:focus{
+	outline: none;
+    box-shadow: none;
+}
 
 input::selection{
 	color:white;
@@ -237,7 +276,15 @@ input::selection{
 	height: 120px;
 	clear: both;
 }
-
+::-moz-placeholder {  /* Firefox 19+ */
+   padding-left: 5px;  
+}
+::-webkit-input-placeholder {
+   padding-left: 5px;
+}
+ms-input-placeholder{
+	padding-left: 5px;
+}
 .social{
 	text-align: center;
 	color: #DBDBDB;
@@ -335,12 +382,17 @@ input::selection{
 	color:white;
 }
 
-@media  (max-width: 550px){
+@media  (max-width: 650px){
 	.headersection h1{
-		font-size: 42px;
+		font-size: 45px;
 		border: 0;
-		padding: 0;
+		padding: 10px 0;
+		
 
+	}
+	.headersection .intro1{
+		font-size: 28px;
+		font-weight: 300;
 	}
 
 	.links a{
@@ -352,8 +404,24 @@ input::selection{
 		height: 500px;
 	}
 
+	.description{
+	width: 80%;	
+    font-size: 18px;
+	}
 	
-
+	.skill{
+		font-style: 18px;
+		padding: 40px 0;
+	}
+	.skilldescription{
+		width: 85%;
+		font-size: 18px;
+		text-align: left;
+	}
+	
+	input,textarea{
+	width: 270px;
+	}
 	.zmdi-menu{
 		visibility: visible;
 	}

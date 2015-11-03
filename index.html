@@ -6,20 +6,16 @@
 	<meta charset="UTF-8">
 	<title>Welcome | It's KENNY</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet"  href="css/main.css" >
 	<link rel="stylesheet" href="js/main.js">
 	<link rel="stylesheet" href="css/simplegrid.css">
-	<link rel="icon" 
-      type="image/png" 
-      href="favicon.ico">
+	<link rel="icon" type="image/png" href="favicon.ico">
 	<script src="js/flipping_text.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-   
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 </head>
+
 <body>
 	<nav>
-
 		<div class="links">
 			<i class="zmdi zmdi-menu"></i>
 			<a href="#about" >about</a>
@@ -31,26 +27,29 @@
 	</nav>
 
 	<div class="headersection">
-		<div class="intro1">
-			<h1 style="border:7px solid white;" class="intro">I AM KENNY MARK</h1>
-			<h1 style="font-size:32px;">Web Designer// Front End Developer/></h1>
-		</div>
 		
-	<a href="#about"><i class="zmdi zmdi-chevron-down" style="font-size:38px; padding-top:20px;     position: absolute;"></i></a>
+			<h1 class="intro">I AM KENNY MARK</h1>
+			<h1 class="intro1">Web Designer// Front End Developer/></h1>
+		
+		
+	<a href="#about">
+		<i class="zmdi zmdi-chevron-down" style="font-size:38px; padding-top:20px; position: absolute;"></i>
+	</a>
 		
 	</div>
 	
 	<a name="about">
 		<div class="aboutsection">
 
-			<h2 style="color:#1C4355;">About Me</h2> 
+			<h2 style="color:#2d2d2d;">About Me</h2> 
 
 			<div class="profilepic">
 			
 			</div>
 			<div class="description">
 				<p>
-					Currently a student in college studying Computing and Systems Development at Liverpool College, Liverpool. I'm a freelance junior web developer by night and student by day. Websign is my main focus even though I love everything about user interaction design and user experience on the web. I have worked on several personal projects including my this website which I designed and developed in less than 20 hours of work combined. I am minimalist when it comes to the web, and	 and like the cliche goes, sometimes "Less is More".</p>
+					Currently a student in college studying Computing and Systems Development at Liverpool College, Liverpool. I'm a freelance junior web developer by night and student by day. Websign is my main focus even though I love everything about user interaction design and user experience on the web. I have worked on several personal projects including my this website which I designed and developed in less than 20 hours of work combined. I am minimalist when it comes to the web, and	 and like the cliche goes, sometimes "Less is More".
+					</p>
 			</div>
 					
 		</div>		
@@ -59,31 +58,39 @@
 
 	<a name="skills">
 		<div class="skillssection">
-			<h2 style="color:white">Skills + Details</h2> 
-			<div class="grid grid-pad center">
+			<h2>Skills + Details</h2> 
+			<div class="grid grid-pad">
 				<div class="col-1-2">
 					<ul class="skill">
 						<li>Git</li>
+						<li>Java</li>
 						<li>Html5</li>
-						<li>CSS3</li>
 						<li>Javascript</li>
-						<li>Jquery</li>
-						<li>Photoshop</li>
+						<li>Project Design</li>
+				
 					</ul>
 				</div>
-
+				
 				<div class="col-1-2">
-					<div class="content">
-						<p class="skill">
-						I am currently a junior developer working my way up to be a mid-level developer very soon. I actively spend many hours per day writing web code to perfect my skills. I am really passionate about web development hence the effort I put in. Skill wise, I can practically build any type of website with a good modern and responsive design that doesn't complex interactions between the browser and a server. 
-					</p>
-					</div>
-					
+					<ul class="skill">
+						<li>Jquery</li>
+						<li>CSS3</li>
+						<li>Photoshop</li>
+						<li>SQL(MySQL,MS Access)</li>					
+						<li>Frameworks (Bootstrap,Foundation etc)</li>
+					</ul>
 				</div>
 			</div>
 
 		</div>		
 	</a>
+	
+	<div class="explain">
+		
+					<p class="skilldescription">
+					I am currently a junior developer working my way up to be a mid-level developer sooner than later. I actively spend many hours per day writing web code to perfect my skills.Web development is what I'm really passionate about hence the effort I put in. Skill wise, I can practically build any type of website with a good modern and responsive design that doesn't complex interactions between the browser and a server. 
+					</p>	
+	</div>
 
 
 	<a name="portfolio">
@@ -104,15 +111,15 @@
 
 	<a name="contact">
 		<div class="contactsection">
-			<h2 style="text-align: center;color:#1C4355;">Contact Me</h2>
+			<h2 style="text-align: center;color:#2d2d2d;">Contact Me</h2>
 			<div class="grid gridpad">
 			
 				<div class="col-1-2">
 					<form action="https://formspree.io/markcoffiekenneth@gmail.com" method="POST">
 						<label for="">Subject</label>
-						<input type="hidden name="_subject"  placeholder="Hi" "/>
+						<input type="hidden name="_subject"  placeholder="Hi" " value="" />
 						<label for="">Name</label>
-						<input type="text" name="name" placeholder="Your Name">
+						<input type="text" name="name" placeholder="Your Name" value="">
 						<label for="">Email</label>
 						<input type="email"  name="_replyto" placeholder="example@gmail.com">
 						<input type="hidden" name="_next" value="thanks.html"/>
@@ -132,7 +139,7 @@
 			</div>
 
 			<form action="https://formspree.io/markcoffiekenneth@gmail.com" method="POST">
-				<input type="submit" value="Send">
+				<input type="submit" value="Send" id="send()">
 			</form>	
 		</div>		
 	</a>
@@ -181,11 +188,6 @@
 		});
 	</script>
 	
-	<script>
-	$(".zmdi-menu").click(function(){
-		    $(".links a").show();
-		});
-	</script>
 	
 </body>
 </html>
