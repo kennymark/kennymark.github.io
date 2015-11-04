@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,500,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Niconne);
+
 *{
 	margin:0;
 	padding: 0;
@@ -13,11 +13,12 @@
 	font-family: 'Ubuntu', sans-serif;
 	-webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-weight: 300;
 }
 
 nav{
 	height: 60px;
-    background-color: white;
+    background-color: #1B1B1B;
     top: 0;
     position: fixed;
     width: 100%;
@@ -36,9 +37,9 @@ nav{
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    color: #727272;
+    color: #ECECEC;
     margin-right: 15px;
-    font-family: 'lato';
+    font-family: 'Raleway';
     padding: 20px 0 2px 0 ;
     font-weight: 300;
     font-size: 1.2em;
@@ -46,7 +47,7 @@ nav{
 	
 }
 .links a:hover{
-	color: #1C4355;
+	color: #2C3A46;
 	transition:all 0.5s ease;
 	font-weight: 400;
 }
@@ -55,8 +56,8 @@ nav{
 	border-bottom: 1px solid #727272;
 }
 .headersection{
-	height: 90vh;
-	background-color: #32749b;
+	height: 100vh;
+	background-color: #2C3A46;
 	background-attachment: fixed;
 	background-position: center;
     background-size: cover;
@@ -66,7 +67,7 @@ nav{
     flex-direction:column;
     align-items:center;
     justify-content: center;
-    background-image: url(../img/back.jpg);
+    background-image: url(../img/artist.jpg);
     width: 100%;
 }
 
@@ -84,12 +85,16 @@ nav{
 }
 
 .intro1{
-    font-family: 'Niconne', cursive;
-    font-size: 40px;
+    font-family: 'Raleway', cursive;
     padding-bottom: 20px;
+    font-weight: 300;
+}
+.intro1 span{
+	color: #2C3A46;
+	transform:rotate(40deg);
 }
 .aboutsection{
-	background: rgba(242, 242, 242, 0.48) none repeat scroll 0% 0%;
+	border-bottom: 1px solid rgba(128, 128, 128, 0.41);
 }
 .aboutsection h2 ,.skillssection h2{
 	text-align: center;
@@ -127,13 +132,13 @@ h2{
 
 .description{
 	padding-bottom: 70px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	color: #727272;
 	margin: auto;
 	width: 70%;	
-	line-height: 32px;
-    font-size: 22px;
+	line-height: 34px;
+    font-size: 20px;
     letter-spacing: 0.1px;
 
 }
@@ -144,18 +149,15 @@ h2{
 	
 }
 
-.explain{
-	background: #1a1a1a;
-
-}
 
 .explain {
-	color: white;
+	color: #DEDDDD;
 	background-size: cover;
 	background-position: center;
+	background:#2C3A46;
 }
 .porfoliosection{
-	background:#32749B;
+	background:#1B1B1B;
 	margin: auto;
 	position: relative;
 }
@@ -171,9 +173,9 @@ h2{
 }
 .skill{
 	color: #2a2a2a;
-	font-family: 'Lato',sans-serif;
+	font-family: 'Raleway',sans-serif;
 	padding: 50px 150px;
-	font-size: 22px;
+	font-size: 20px;
 	font-weight:300;
 	line-height: 32px;
 	;
@@ -189,9 +191,9 @@ h2{
 	width: 60%;
 	margin: auto;
 	padding: 80px 0;
-	font-family: 'Lato',sans-serif;
+	font-family: 'Raleway',sans-serif;
 	line-height: 32px;
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 300;
 }
 
@@ -208,8 +210,8 @@ form{
     
 }
 label{
-	font-size: 22px;
-	font-family: 'Lato',sans-serif;
+	font-size: 20px;
+	font-family: 'Raleway',sans-serif;
 	display: block;
 	margin-top: 50px;
 	text-align: inherit;
@@ -223,7 +225,7 @@ input{
 	padding-top: 20px;
 	width: 350px;
 	font-size: 18px;
-	font-family: 'Lato',sans-serif;
+	font-family: 'Raleway',sans-serif;
 	font-weight: 300;
 }
 textarea{
@@ -233,7 +235,7 @@ textarea{
 	border-bottom: 0;
 	border-top: 0;
 	border-right: 0;
-	font-family: 'Lato';
+	font-family: 'Raleway', sans-serif;
 	padding:40;
 	font-size: 18px;
 }
@@ -328,13 +330,14 @@ ms-input-placeholder{
     color: grey;
     visibility: hidden;
     cursor: pointer;
+    transition:all .4s ease;
 }
 .zmdi-menu:hover{
-	color: black;
+	color: white;
 }
 .zmdi-chevron-down{
 	color: white;
-	animation:pulse 0.9s ;
+	animation:pulse 1s cubic-bezier(0.23, 0.9, 1, 1); ;
 	-webkit-animation-iteration-count: 16; /* Chrome, Safari, Opera */
 	animation-iteration-count: 16;
 }
@@ -416,6 +419,7 @@ ms-input-placeholder{
 	input,textarea{
 	width: 270px;
 	}
+
 	.zmdi-menu{
 		visibility: visible;
 	}
