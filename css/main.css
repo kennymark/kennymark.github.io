@@ -415,8 +415,11 @@ ms-input-placeholder{
 	input,textarea{
 	width: 270px;
 	}
-
+	.subfooter p span{
+		display: none;
+	}
 	.zmdi-menu{
 		visibility: visible;
+		color: white;
 	}
 }
