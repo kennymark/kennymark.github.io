@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css);
 
 *{
@@ -7,9 +7,10 @@
 }
 
 .body{
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background: rgba(44, 58, 70, 0.1);
 }
 
 .container{
@@ -19,7 +20,6 @@
 	align-items:center;	
 	flex-direction:column;
 	justify-content:center;
-	font-family: 'Ubuntu';
 	text-align: center;
 
 }
@@ -46,25 +46,28 @@ h1{
 	font-size:60px;
 	text-transform: uppercase;
 	color: #4B4B4B;
+	font-family: 'Raleway';
 	
 }
 
 .container p{	
 	color: #727272;
 	margin-top:70px;
-	font-family: 'Ubuntu';
+	font-family: 'Raleway';
 	font-size:27px;
 }
 
 .backhome a{
 	text-decoration: none;
 	color:black;
+
 }
 
 .backhome h2{
 	padding-top: 0;
 	font-size: 15px;
 	font-weight: 300;
+	font-family: 'Raleway';
 }
 a:hover{
 	color: white;
