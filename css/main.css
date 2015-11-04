@@ -118,7 +118,7 @@ h2{
 	background-image: url(../img/profilepic.jpg);
 	height: 200px;
 	width: 195px;
-	margin: 30px auto;
+	margin: 50px auto;
 	background-size: cover;
 	background-position: center;
 	border-radius: 50%;
@@ -132,7 +132,7 @@ h2{
 	font-weight: 300;
 	color: #727272;
 	margin: auto;
-	width: 70%;	
+	width: 60%;	
 	line-height: 34px;
     font-size: 20px;
     letter-spacing: 0.1px;
