@@ -1,0 +1,19 @@
+{
+  "name": "kennymark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennymark/kennymark.github.io.git"
+  },
+  "author": "Kenneth Mark Coffie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kennymark/kennymark.github.io/issues"
+  },
+  "homepage": "https://github.com/kennymark/kennymark.github.io#readme"
+}

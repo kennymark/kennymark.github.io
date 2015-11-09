@@ -1,6 +1,8 @@
-var button = document.getElementById.('send')onclick = function() {send()};
-
-function send {
-	button + window.location("thanks.html");
+function toogle(){
+	$.('zmdi zmdi-menu').click(function(){
+			$('.links a').toggle(300);
+	});
 
 };
+
+$document.ready(toggle);

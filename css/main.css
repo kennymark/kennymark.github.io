@@ -390,8 +390,10 @@ ms-input-placeholder{
 
 	.links a{
 		float: right;
-		display: block;
-		visibility: hidden;
+		display: flex;
+		flex-direction:row;
+		display: none;
+		
 	}
 	.headersection{
 		height: 500px;
