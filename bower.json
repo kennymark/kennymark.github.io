@@ -1,0 +1,31 @@
+{
+  "name": "kennymark",
+  "version": "1.0",
+  "homepage": "kennymark.me",
+  "authors": [
+    "Kenny Mark <markcoffiekenneth@gmaill.com>"
+  ],
+  "description": "My Portfolio Website",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "portfolio",
+    "website",
+    "kenny",
+    "mark",
+    "coffie"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "wow": "wowjs#~1.1.2"
+  }
+}
