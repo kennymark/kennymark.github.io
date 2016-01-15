@@ -19,6 +19,11 @@ $('a[href*=#]:not([href=#])').click(function() {
         }});
     hidegototop();
     
+    $('.desc2').hide();
+
+    $('.fa-caret-down').click(function(){
+      $('.desc2').slideToggle(300)
+    });
     $('.cutenav').hide();
 
   });
@@ -37,11 +42,7 @@ function hidegototop(){
   }
 };
 
-$('.desc2').hide();
 
-$('.fa-caret-down').click(function(){
-  $('.desc2').slideToggle(300)
-});
 
 $(document).scroll(function() {
   /* Act on the event */
