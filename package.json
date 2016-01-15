@@ -1,0 +1,36 @@
+{
+  "name": "redesign",
+  "version": "1.0.0",
+  "description": "my website redesign",
+  "main": "index.html",
+  "dependencies": {
+    "browser-sync": "^2.10.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennymark/redesign.git"
+  },
+  "keywords": [
+    "new",
+    "website",
+    "kennymark",
+    "kennymark.me",
+    "redesign"
+  ],
+  "author": "Kenny Mark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kennymark/redesign/issues"
+  },
+  "homepage": "https://github.com/kennymark/redesign#readme"
+}

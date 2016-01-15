@@ -1,21 +1,14 @@
 {
-  "name": "kennymark",
-  "version": "1.0",
-  "homepage": "kennymark.me",
+  "name": "redesign",
+  "version": "0.0.0",
   "authors": [
     "Kenny Mark <markcoffiekenneth@gmaill.com>"
   ],
-  "description": "My Portfolio Website",
-  "main": "index.html",
+  "description": "",
+  "main": "",
   "moduleType": [],
-  "keywords": [
-    "portfolio",
-    "website",
-    "kenny",
-    "mark",
-    "coffie"
-  ],
   "license": "MIT",
+  "homepage": "www.kennymark.me",
   "private": true,
   "ignore": [
     "**/.*",
@@ -25,7 +18,8 @@
     "tests"
   ],
   "dependencies": {
+    "wow": "wowjs#~1.1.2",
     "jquery": "~2.1.4",
-    "wow": "wowjs#~1.1.2"
+    "animate.css": "animate-css#~3.5.0"
   }
 }

@@ -1,197 +1,126 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Welcome | It's KENNY</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet"  href="css/main.css" >
-	<link rel="stylesheet" href="js/main.js">
-	<link rel="stylesheet" href="css/simplegrid.css">
-	<link rel="icon" type="image/png" href="favicon.ico">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		
-		ga('create', 'UA-68267074-1', 'auto');
-		ga('send', 'pageview');
-	</script>
+   <meta charset="UTF-8">
+   <meta name="author" content="Kenneth Mark Coffie">
+   <meta name="viewport" content="width=device-width", initial-scale=1>
+   <title>Redesign</title>
+   <link rel="stylesheet" href="css/styles.css">
+   <script src="bower_components/jquery/dist/jquery.min.js"></script>
+   <script src="js/index.js"></script>
 </head>
+   <body>
+      <nav>
+         <ul>
+            <a href="#profile"><li>Profile</li></a>
+            <a href="#skills"><li>skills</li></a>
+            <a href="#port"><li>Portfolio</li></a>
+            <a href="#contact"><li>contact</li></a>
+            <span><i class="fa fa-bars"></i></span>
+         </ul>
+      </nav>
+      
+      <div class="menubar">
+         <i class="fa fa-times"></i>
+         <ul class="nav2">
+            <a href="#profile"><li>Profile</li></a>
+            <a href="#skills"><li>skills</li></a>
+            <a href="#port"><li>Portfolio</li></a>
+            <a href="#contact"><li>contact</li></a>
+         </ul>
+      </div>
 
-<body>
-	<nav>
-		<div class="links">
-			<i class="zmdi zmdi-menu"></i>
-			<a href="#about" >about</a>
-			<a href="#skills">Skills</a>
-			<a href="#portfolio" >porfolio</a>
-			<a href="#contact">Contact</a>
-			
-		</div>
-	</nav>
+      <div class="herosection hide" id="herosection">
+         <h1 class="intro">greatness <br />since 94</h1>
+      </div>
 
-	<div class="headersection">
-		
-			<h1 class="intro firstext">I AM KENNY MARK</h1>
-			<h1 class="intro1">&lt; Web Artist <span>||</span> Front End Developer/&gt;</h1>
-		
-		
-	<a href="#about">
-		<i class="zmdi zmdi-chevron-down" style="font-size:38px; padding-top:20px; position: absolute;"></i>
-	</a>
-		
-	</div>
-	
-	<a name="about">
-		<div class="aboutsection">
+      <div class="overlay"></div>
 
-			<h2 style="padding-top:80px;">About Me</h2> 
+      <div class="cutenav">
+         <a href="#profile"><i class="fa fa-user"></i> <br></a>
+         <a href="#skills"><i class="fa fa-code"></i> <br></a>
+         <a href="#port"><i class="fa fa-briefcase"></i> <br></a>
+         <a href="#contact"><i class="fa fa-phone"></i></a>
+      </div>
 
-			<div class="profilepic">
-			
-			</div>
-			<div class="description">
-				<p>
-					Currently a student in college studying Computing and Systems Development at Liverpool College, Liverpool. I'm a freelance junior web developer by night and student by day. Websign is my main focus even though I love everything about user interaction design and user experience on the web. I have worked on several personal projects including my this website which I designed and developed in less than 20 hours of work combined. I am minimalist when it comes to the web, and	 and like the cliche goes, sometimes "Less is More".
-					</p>
-			</div>
-					
-		</div>		
-	</a>
+      <div class="profilesection hide" id="profile">
+         <h2 class="title">Profile</h2>
+         <div class="profilepic"></div>
+         <p class="desc">Currently a student in college studying Computing and Systems Development at Liverpool City College, Liverpool. I'm a freelance junior web developer by night and student by day. Web design is my main focus even though I love everything about user interaction design and user experience on the web. I have worked on several personal projects including my this website which I designed and developed in less than 20 hours of work combined. I am minimalist when it comes to the web, and  and like the cliche goes, sometimes "Less is More".
+         <i class="fa fa-caret-down"></i> 
+         </p>
+         <p class=" desc desc2">
+            I am currently a junior developer working my way up to be a mid-level developer sooner than later. I actively spend many hours per day writing web code to perfect my skills. Web development is what I'm really passionate about hence the effort I put in. Skill wise, I can practically build any type of website with a good modern and responsive design that doesn't complex interactions between the browser and a server. 
+         </p>
+      </div>
 
+      <div class="skillsection hide" id="skills">
+         <h2 class="title">Skillset</h2>
 
-	<a name="skills">
-		<div class="skillssection">
-			<h2>Skills + Details</h2> 
-			<div class="grid grid-pad">
-				<div class="col-1-2">
-					<ul class="skill">
-						<li>Git</li>
-						<li>Html5</li>
-						<li>Javascript</li>
-						<li>Project Design</li>
-						<li>Yeoman Workflow (Yeoman, Bower & Gulp)</li>
-				
-					</ul>
-				</div>
-				
-				<div class="col-1-2">
-					<ul class="skill">
-						<li>Jquery</li>
-						<li>CSS3</li>
-						<li>Photoshop</li>				
-						<li>Responsive Design</li>
-						<li>Frameworks (Bootstrap,Foundation etc)</li>
-					</ul>
-				</div>
-			</div>
+         <div class="box1">
+            <div class = "skills">
+               <li>Git</li>
+               <li>Html5</li>
+               <li>Javascript</li>
+               <li>Project Design</li>
+               <li>Yeoman Workflow (Yeoman, Bower & Gulp)</li>
+            </div>
+            
+         </div>
 
-		</div>		
-	</a>
-	
-	<div class="explain">
-		
-					<p class="skilldescription">
-					I am currently a junior developer working my way up to be a mid-level developer sooner than later. I actively spend many hours per day writing web code to perfect my skills. Web development is what I'm really passionate about hence the effort I put in. Skill wise, I can practically build any type of website with a good modern and responsive design that doesn't complex interactions between the browser and a server. 
-					</p>	
-	</div>
+         <div class="box2">
+           <div class = "skills">
+               <li>Jquery</li>
+               <li>CSS3</li>
+               <li>Photoshop</li>
+               <li>Responsive Design</li>
+               <li>SQL/MongoDB</li>
+               <li>Frameworks (Bootstrap,Foundation etc)</li>
 
+            </div> 
+         </div>
 
-	<a name="portfolio">
-		<div class="porfoliosection">
-			<h2 style="color:white";>Portfolio</h2>
-			
-			<div class="grid">
-				<div class="col-1-2 project">
-					<img src="img/davon.png" style="height:400px; width:100%;">
-					<center><a href="http://www.dacrew.tk" style="color:white; padding-top:15px; font-family:raleway;" target="_blank">
-					Davon's Website</a></center>
-				</div>
+      </div>
 
-				<div class="col-1-2 project"><img src="img/oz.JPG" style="height:400px; width:100%;">
-					<center><a href="http://www.dacrew.tk" style="color:white; padding-top:15px; font-family:raleway;" target="_blank">
-					Oz Studios Website</a></center>
+      <div class="portfoliosection hide" id="port">
+         <ul class="slideshow">
+            <img src="img/davon.png" alt="Davon's Website">
+            <!-- <img src="img/oz.JPG" alt="Oz studios website"> -->
+         </div>
+      </div>
+      <div class="contactsection hide" id="contact">
+         <h2 class="title">Contact</h2>
+         <center>
+            <div class="contactform">
+               <form action="http://formspree.io/kennymark@kennymark.me" method="POST" class="form" >
+                     <label for="">Subject</label> <br>
+                     <input type="text"name="subject"> <br> <br>
+                     <label for="">Your Name</label> <br>
+                     <input type="text" name="name"> <br> <br>
+                     <label for="">Email</label><br>
+                     <input type="email" name="_replyto"> <br> <br>  
+                     <label for="message">Message</label> <br> <br>
+                     <textarea name="message" id="" cols="40" rows="12"></textarea> <br>
+                     <input type="text" name="_gotcha" style="display:none" />
+                  <input type="submit" class="btn" value="Send">
+               </form>
+            </div>
+         </center>
+      </div>
 
-				</div>
-				
-			</div>
-		
-		</div>		
-	</a>
-
-
-	<a name="contact">
-		<div class="contactsection">
-			<h2 >Contact Me</h2>
-			<div class="grid gridpad">
-			
-				<div class="col-1-2">
-					<form action="https://formspree.io/markcoffiekenneth@gmail.com" method="POST">
-						<label for="">Subject</label>
-						<input type="hidden name="_subject"  placeholder="Hi" " value="" />
-						<label for="">Name</label>
-						<input type="text" name="name" placeholder="Your Name" value="">
-						<label for="">Email</label>
-						<input type="email"  name="_replyto" placeholder="example@gmail.com">
-						<input type="hidden" name="_next" value="thanks.html"/>
-
-					</form>
-				</div>
-
-				<div class="col-1-2">
-					<form action="https://formspree.io/markcoffiekenneth@gmail.com" method="POST">
-						<label class="msg">Message</label>
-						<textarea name="message" rows="7" placeholder="Your message"></textarea>
-						
-					</form>
-				</div>
-
-				
-			</div>
-
-			<form action="https://formspree.io/markcoffiekenneth@gmail.com" method="POST">
-				<input type="submit" value="Send" id="send()">
-			</form>	
-		</div>		
-	</a>
-
-
-	<div class="footer">
-		<div class="social">
-			
-			<a href="https://twitter.com/sleekykenny" target="_blank"><i class="zmdi zmdi-twitter"></i></a>
-			<a href="https://github.com/kennymark" target="_blank"><i class="zmdi zmdi-github"></i></a>
-			<a href="https://www.linkedin.com/pub/kenneth-mark-coffie/103/596/831" target="_blank"><i class="zmdi zmdi-linkedin-box"></i></a>
-			<a href="mailto:unico.genio@outlook.com"><i class="zmdi zmdi-email-open"></i></a>
-			<p>Made with <i class="zmdi zmdi-favorite"></i> in Liverpool</p>
-		</div>	
-	</div> 
-
-	<div class="subfooter">
-	 	<p><span>all content copyright</span> &copy Kenneth Mark coffie <span>2015</span></p>
-	 </div>
-
-	<script>
-		$(function() {
-		  $('a[href*=#]:not([href=#])').click(function() {
-		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		      var target = $(this.hash);
-		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		      if (target.length) {
-		        $('html,body').animate({
-		          scrollTop: target.offset().top
-		        }, 750);
-		        return false;
-		      }
-		    }
-		  });
-		});
-	</script>
-	
-	</script>
-</body>
+      <footer class="hide">
+         <div class="social">
+            <a href="https://twitter.com/sleekykenny" target="_blank"><i class="fa fa-twitter"></i> </a>
+            <a href="https://github.com/kennymark" target="_blank"><i class="fa fa-github-alt"></i></a>
+            <a href="https://www.linkedin.com/pub/kenneth-mark-coffie/103/596/831"target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="mailto:kennymark@kennymark.me"><i class="fa fa-envelope"></i></a>
+            <p class="copyright">
+               All right reserved &copy Kenneth Mark Coffie
+            </p>
+         </div>
+         <div class="backtotop">
+            <a href="#herosection" ><i class="fa fa-angle-up"></i> </a>
+         </div>
+      </footer>
+   </body>
 </html>
