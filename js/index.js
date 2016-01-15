@@ -37,7 +37,11 @@ function hidegototop(){
   }
 };
 
-$('.fa-caret-down')
+$('.desc2').hide();
+
+$('.fa-caret-down').click(function(){
+  $('.desc2').slideToggle(300)
+});
 
 $(document).scroll(function() {
   /* Act on the event */
@@ -69,7 +73,6 @@ $('.fa-bars').click(function(){
 })
 
 $('.fa-times').on('click',function(){
-  
   $('nav').show();
   $('.menubar').fadeOut(200);
   hide.show();
