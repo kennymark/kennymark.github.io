@@ -1,144 +1,205 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="author" content="Kenny Mark">
-   <meta name="description" content="kennymark's personal website">
-   <meta name="revisit-after" content="10 days">
-   <meta name="keywords" content="HTML,CSS,git,JavaScript, liverpool,web developer, portfolio, @sleekykenny">
-   <meta name="google" content="translate" />
-   <meta property="og:site_name" content="Kenny Mark">
-   <meta property="og:url" content="http://kennymark.me">
-   <meta name="robots" content="index">
-   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   <meta name="viewport" content="width=device-width", initial-scale=1>
-   <title>Kenny Mark</title>
-   <link rel="stylesheet" href="css/styles.css">
-   <script src="bower_components/jquery/dist/jquery.min.js"></script>
-   <script src="js/index.js"></script>
-   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-     
-     ga('create', 'UA-68267074-1', 'auto');
-     ga('send', 'pageview');
-  </script>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#40e0d0">
+  <title>Kenny Mark</title>
+  <link rel="canonical" href="http://www.kennymark.co/new/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="web developer, computer science, liverpool, hire me, web design, coding, build, websites, javascript, css, html">
+  <meta name="description" content="This is Kenny Mark's Personal Website. I am a computer science student who loves web development. I am for hire">
+  <!--FACEBOOK-->
+  <meta property="og:title" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:url" content="http://www.kennymark.co/new/">
+  <meta property="og:description" content="This is Kenny Mark's Personal Website. I am a computer science student who loves web development. I am for hire">
+  
+  <!--TWITTER-->
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:title" content="">
+  <meta property="twitter:description" content="">
+  <meta property="twitter:creator" content="Kenny Mark">
+  <meta property="twitter:url" content="http://www.kennymark.co/new/">
+
+ 
+  <!--FAVICONS-->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/fav/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/fav/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/fav/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/fav/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/fav/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/fav/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/fav/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/fav/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/fav/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/fav/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/fav/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/fav/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500|Source+Sans+Pro:300,400" rel="stylesheet">
 </head>
-   <body>
-      <nav>
-         <ul>
-            <a href="#profile"><li>Profile</li></a>
-            <a href="#skills"><li>skills</li></a>
-            <a href="#port"><li>Portfolio</li></a>
-            <a href="#contact"><li>contact</li></a>
-            <span><i class="fa fa-bars"></i></span>
-         </ul>
-      </nav>
-      
-      <div class="menubar">
-         <i class="fa fa-times"></i>
-         <ul class="nav2">
-            <a href="#profile"><li>Profile</li></a>
-            <a href="#skills"><li>skills</li></a>
-            <a href="#port"><li>Portfolio</li></a>
-            <a href="#contact"><li>contact</li></a>
-         </ul>
+
+<body>
+  <div class="sideNav">
+    <p>MENU</p>
+    <ul>
+      <li class="items"><a href="#projects">Projects</a></li>
+      <li class="items"><a href="#profile">Profile</a></li>
+      <li class="items"><a href="#skills">Skills</a></li>
+      <li class="items"><a href="#contact">Contact</a></li>
+      <li class="items"><a href="assets/KennethCV.pdf" target="_blank">CV</a></li>
+    </ul>
+  </div>
+  <div class="realbody">
+    <div class="landing">
+      <!--<video src="assets/video/bgVideo.mp4" autoplay loop></video>-->
+      <div class="introdiv">
+        <h1>Hello! I'm Kenny and I <span class="intro"> </span> <br>websites</h1>
       </div>
 
-      <div class="herosection hide" id="herosection">
-         <h1 class="intro">greatness <br />since 94</h1>
+    </div>
+    <div class="projects" id="projects">
+      <h1>Portfolio Sample</h1>
+      <div class="row">
+        <div class="col proj1">
+          <img src="imgs/weatherapp.PNG" alt="An image of a weather app on codepen.io" />
+          <div class="description">
+              <p>This is a weather app built with the DarkWeather API to query weather data based on user data or from a search input. Languages used here were mainly JavaScript, JQuery. I used both the axios library and the JQuery API methods to make the API calls.</p>
+              <button><a href="https://run.plnkr.co/plunks/0EHSofihFea3DvhDaYRb/" target="_blank">View Project</a></button>
+          </div>
+        </div>
+        <div class="col proj2">
+          <img src="imgs/texteditor.PNG" alt="An image of a text editor app on codepen" />
+          <div class="description">
+              <p>This is a web based text editor that does real time text analysis using natural language processing via the compromise.cool and rita.js libraries</p>
+              <button><a href="https://codepen.io/kennymark/full/KmRVjp/" target="_blank">View Project</a></button>
+          </div>
+        </div>
+        
+        <div class="col proj3">
+          <img src="imgs/schoolwebsite.PNG" alt="Image of the school website" />
+          <div class="description">
+              <p>One of my most proudest projects or projects yet. The FSE-REC is an asp.net website built by me and and 3 other friends as a projects for my second year project in University. It was built in the course of 4 weeks. It includes functionality ranging from a SQl database, dynamic routing, login integration. </p>
+              <button><a href="http://1613775.studentwebserver.co.uk/fserec/" target="_blank">View Project</a></button>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+
+        <div class="col proj4">
+          <img src="imgs/ozstudio.PNG" alt="an image of Oz Studios homepage" />
+          <div class="description">
+              <p>Oz Studios is a fictional web design agency website built to showcase my skills as a front-end developer or web designer. The project is hosted on Github and the code can be used without attribution</p>
+              <button><a href="http://www.kennymark.co.uk/oz" target="_blank">View Project</a></button>
+          </div>
+        </div>
+
+        <div class="col proj5">
+          <img src="imgs/davon.png" alt="Image of Davon's website" />
+          <div class="description">
+              <p>Davon's personal website is a modern colourful website built to suit the clients need. Design was inspired by material design and other artists design work </p>
+              <button><a href="http://www.kennymark.co.uk/davon" target="_blank">View Project</a></button>
+          </div>
+          
+        </div>
+        <div class="col proj6">
+          <img src="imgs/blogPost.PNG" alt="An simple design" />
+          <div class="description">
+              <p>A showcase of my skills to reproduce pixel by pixel a projuct after it has been designed by a designer using normal front-end technologies</p>
+              <button><a href="https://codepen.io/kennymark/full/LGxpNz/" target="_blank"> View Project</a></button>
+          </div>
+        </div>
       </div>
 
-      <div class="overlay"></div>
-
-      <div class="cutenav">
-         <a href="#profile"><i class="fa fa-user"></i> <br></a>
-         <a href="#skills"><i class="fa fa-code"></i> <br></a>
-         <a href="#port"><i class="fa fa-briefcase"></i> <br></a>
-         <a href="#contact"><i class="fa fa-phone"></i></a>
+      <a href="projects.html" _target="blank"><button class="btn">View more projects &#8594;</button></a>
+    </div>
+    <div class="profile" id="profile">
+      <div class="container">
+        <h1 class="center align header">A bit about me</h1>
+        <p>I'm Kenny Mark, currently a Computer Science major undergrad at the University of Chester. I'm a freelance junior
+          web developer by night and student by day. Web design is my main focus even though I love everything about user
+          interaction design and user experience on the web. I have worked on several personal projects including this website
+          which I designed and developed all by myself. I am minimalist when it comes design as one can see from this site,
+          and like the cliche goes, sometimes "Less is More".
+        </p>
+        <p>I actively spend many hours per day writing web code to perfect my skills. Web development is what I'm really passionate
+          about hence the effort I put in. Skill wise, I can practically build any type of website with a good modern and
+          responsive design that doesn't complex interactions between the browser and a server.You can hire me to work on
+          your website or front-end projects
+        </p>
       </div>
+    </div>
 
-      <div class="profilesection hide" id="profile">
-         <h2 class="title">Profile</h2>
-         <div class="profilepic"></div>
-         <p class="desc">I'm <i>Kenny Mark</i> and I'm currently a Computer Science major undergrad at the University of Chester. I'm a freelance junior web developer by night and student by day. Web design is my main focus even though I love everything about user interaction design and user experience on the web. I have worked on several personal projects including my this website which I designed and developed in less than 20 hours of work combined. I am minimalist when it comes to the web, and  and like the cliche goes, sometimes "Less is More".
-         <i class="fa fa-caret-down"></i> 
-         </p>
-         <p class=" desc desc2">
-            I am currently a junior developer working my way up to be a mid-level developer sooner than later. I actively spend many hours per day writing web code to perfect my skills. Web development is what I'm really passionate about hence the effort I put in. Skill wise, I can practically build any type of website with a good modern and responsive design that doesn't complex interactions between the browser and a server. 
-         </p>
-      </div>
-
-      <div class="skillsection hide" id="skills">
-         <h2 class="title">Skillset</h2>
-
-         <div class="box1">
-            <div class = "skills">
-               <li>Git</li>
-               <li>Html5</li>
-               <li>Javascript</li>
-               <li>Project Design</li>
-               <li>Yeoman Workflow (Yeoman, Bower & Gulp)</li>
+    <div class="skills" id="skills">
+      <h1>Things I can do ✌️</h1>
+      <div class="container">
+        <div class="grid">
+          <div class="box box1">
+            <h1>Speciality </h1>
+            <div class="boxcontent">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Jquery</li>
+              <li>JavaScript</li>
+              <li>Frameworks</li>
+              <li>API's</li>
             </div>
-            
-         </div>
-
-         <div class="box2">
-           <div class = "skills">
-               <li>Jquery</li>
-               <li>CSS3</li>
-               <li>Photoshop</li>
-               <li>Responsive Design</li>
-               <li>SQL/MongoDB</li>
-               <li>Frameworks (Bootstrap,Foundation etc)</li>
-
-            </div> 
-         </div>
-
-      </div>
-
-      <div class="portfoliosection hide" id="port">
-         <ul class="slideshow">
-            <img src="img/davon.png" alt=" kenny mark Davon's Website">
-            <!-- <img src="img/oz.JPG" alt="Oz studios website"> -->
-         </div>
-      </div>
-      <div class="contactsection hide" id="contact">
-         <h2 class="title">Contact</h2>
-         <center>
-            <div class="contactform">
-               <form action="http://formspree.io/kennymark@kennymark.me" method="POST" class="form" >
-                     <label for="">Subject</label> <br>
-                     <input type="text"name="subject"> <br> <br>
-                     <label for="">Your Name</label> <br>
-                     <input type="text" name="name"> <br> <br>
-                     <label for="">Email</label><br>
-                     <input type="email" name="_replyto"> <br> <br>  
-                     <label for="message">Message</label> <br> <br>
-                     <textarea name="message" id="" cols="40" rows="12"></textarea> <br>
-                     <input type="text" name="_gotcha" style="display:none" />
-                  <input type="submit" class="btn" value="Send">
-               </form>
+          </div>
+          <div class="box box2">
+            <h1>Worked With</h1>
+            <div class="boxcontent">
+              <li>Reacts</li>
+              <li>Angular</li>
+              <li>VueJS</li>
+              <li>MongoDB</li>
+              <li>Firebase</li>
+              <li>Meteor</li>
             </div>
-         </center>
+          </div>
+        </div>
       </div>
+    </div>
 
-      <footer class="hide">
-         <div class="social">
-            <a href="https://twitter.com/sleekykenny" target="_blank"><i class="fa fa-twitter"></i> </a>
-            <a href="https://facebook.com/kenneth.markcoffie" target="_blank"><i class="fa fa-facebook"></i> </a>
-            <a href="https://github.com/kennymark" target="_blank"><i class="fa fa-github-alt"></i></a>
-            <a href="https://www.linkedin.com/pub/kenneth-mark-coffie/103/596/831"target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="mailto:kennymark@kennymark.me"><i class="fa fa-envelope"></i></a>
-            <p class="copyright">
-               All right reserved &copy Kenneth Mark Coffie
-            </p>
-         </div>
-         <div class="backtotop">
-            <a href="#herosection" ><i class="fa fa-angle-up"></i> </a>
-         </div>
-      </footer>
-   </body>
+    <div class="contact" id="contact">
+      <h1>Holla at me 👇</h1>
+      <form action="https://formspree.io/geniounico@outlook.com" method="POST" class="form">
+        <div class="leftform">
+          <label name="subject">Subject</label> <br /> <br />
+          <input type="text" name="name" /> <br />
+          <label>Name</label> <br /> <br />
+          <input type="text" required/> <br />
+          <label>Email</label> <br /> <br />
+          <input type="email" name="_replyto" required /> <br />
+        </div>
+        <div class="rightform">
+          <label>Message</label> <br /> <br />
+          <textarea cols="40" name="emailcontent"></textarea>
+
+        </div>
+        <div class="formbtn">
+          <input type="submit" value="Send" class="buttonsubmit" />
+        </div>
+
+      </form>
+    </div>
+    <div class="footer">
+      <p>Made with 💕 by Kenny Mark</p>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
 </html>
