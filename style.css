@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik+Mono+One");
 @import url("https://fonts.googleapis.com/css?family=Karla|Poppins:500,600");
+@import url("https://fonts.googleapis.com/css?family=Signika:400,600");
+
 body {
   font-family: "Source Code Pro", sans-serif !important;
   font-weight: 400;
@@ -10,27 +12,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.name {
-  position: absolute;
-  left: 50%;
-  top: 10%;
-  text-transform: uppercase;
-  border: 4px solid black;
-  transform: translateX(-50%);
-  font-family: "Rubik Mono One", cursive;
-  background: #000;
-  height: 0;
-  font-size: x-large;
+.nav {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  display: none;
 }
-
-ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-  margin-left: 35px;
+.nav p {
+  float: right;
 }
-
 li {
   list-style-type: none;
   padding: 10px;
@@ -49,31 +38,8 @@ a:hover {
   color: #5e5e5e !important;
 }
 
-.sideNav {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 250px;
-  height: 100vh;
-  border-right: 1px solid #f2f2f2;
-  max-height: 100%;
-}
-
-.sideNav p {
-  visibility: hidden;
-}
-
 .sideNav ul > p {
   display: none;
-}
-
-.realbody {
-  position: absolute;
-  left: 251px;
-  right: 0;
-  background-color: #fafafa;
 }
 
 .container {
@@ -85,33 +51,34 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   height: 85vh;
-  background: white;
   border-bottom: 1px solid #e6e6e6;
+  width: 98%;
+  margin: 20px auto;
+  background-image: url("/imgs/me.jpg");
+  background-size: cover;
+  background-position: center;
 }
-
+.landing .color-red {
+  height: inherit;
+  /* background: #ff5252; */
+  background: #ff5252eb;
+  position: absolute;
+  width: inherit;
+}
 .introdiv {
-  padding: 30px 0;
-  border: 10px solid;
-  box-shadow: 7px 7px 3px lightgrey;
-  width: 70%;
+  border: 10px solid white;
+  box-shadow: 7px 7px 3px #f31f1f;
   animation: bounceInDown 1.3s;
+  z-index: 9;
 }
 
 .landing h1 {
-  color: black;
-  font-size: 100px;
-  font-family: "karla", sans-serif !important;
-  width: 90%;
-  line-height: 1;
-  margin: auto;
-  font-weight: 700;
-}
-
-video {
-  width: 100%;
-  filter: contrast(0.15);
+  color: white;
+  font-size: 110px;
+  font-family: "Signika", sans-serif !important;
+  padding: 0 40px;
+  text-shadow: 5px 9px#f31f1f;
 }
 
 .profile {
@@ -288,7 +255,7 @@ video {
   width: 250px;
 }
 .btn-projects {
-  background: #000;
+  background: #414040;
 }
 .btn-github {
   background: #3d92ff;
@@ -493,17 +460,15 @@ video {
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 977px) {
-  .sideNav {
+  .nav {
     width: 100%;
     height: 70px;
     background-color: white;
     z-index: 65;
     position: fixed;
-    top: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d;
+    display: block;
   }
-  .sideNav p {
+  .nav p {
     font-size: 26px;
     position: absolute;
     left: 80%;
@@ -513,7 +478,7 @@ video {
     letter-spacing: 2px;
     visibility: visible;
   }
-  .sideNav ul {
+  .nav ul {
     background: rgba(64, 224, 208, 0.97);
     margin-top: 69px;
     font-size: 30px;
