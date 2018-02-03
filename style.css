@@ -1,205 +1,209 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik+Mono+One");
-@import url('https://fonts.googleapis.com/css?family=Karla|Poppins:500,600');
+@import url("https://fonts.googleapis.com/css?family=Karla|Poppins:500,600");
 body {
-    font-family: "Source Code Pro", sans-serif !important;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: "Source Code Pro", sans-serif !important;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .name {
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    text-transform: uppercase;
-    border: 4px solid black;
-    transform: translateX(-50%);
-    font-family: 'Rubik Mono One', cursive;
-    background: #000;
-    height: 0;
-    font-size: x-large;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  text-transform: uppercase;
+  border: 4px solid black;
+  transform: translateX(-50%);
+  font-family: "Rubik Mono One", cursive;
+  background: #000;
+  height: 0;
+  font-size: x-large;
 }
 
 ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    margin-left: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin-left: 35px;
 }
 
 li {
-    list-style-type: none;
-    padding: 10px;
+  list-style-type: none;
+  padding: 10px;
 }
 
 a {
-    text-decoration: none;
-    color: #7d7d7d !important;
-    transition: all .1s;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: -1.2px;
+  text-decoration: none;
+  color: #7d7d7d !important;
+  transition: all 0.1s;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -1.2px;
 }
 
 a:hover {
-    color: #5e5e5e !important;
+  color: #5e5e5e !important;
 }
 
 .sideNav {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 250px;
-    height: 100vh;
-    border-right: 1px solid #f2f2f2;
-    max-height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  border-right: 1px solid #f2f2f2;
+  max-height: 100%;
 }
 
 .sideNav p {
-    visibility: hidden;
+  visibility: hidden;
 }
 
-.sideNav ul>p {
-    display: none;
+.sideNav ul > p {
+  display: none;
 }
 
 .realbody {
-    position: absolute;
-    left: 251px;
-    right: 0;
-    background-color: #fafafa;
+  position: absolute;
+  left: 251px;
+  right: 0;
+  background-color: #fafafa;
 }
 
 .container {
-    width: 75%;
-    margin: auto;
+  width: 75%;
+  margin: auto;
 }
 
 .landing {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 85vh;
-    background: white;
-    border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 85vh;
+  background: white;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .introdiv {
-    padding: 30px 0;
-    border: 10px solid;
-    box-shadow: 7px 7px 3px lightgrey;
-    width: 70%;
-    animation: bounceInDown 1.3s;
+  padding: 30px 0;
+  border: 10px solid;
+  box-shadow: 7px 7px 3px lightgrey;
+  width: 70%;
+  animation: bounceInDown 1.3s;
 }
 
 .landing h1 {
-    color: black;
-    font-size: 100px;
-    font-family: 'karla', sans-serif !important;
-    width: 90%;
-    line-height: 1;
-    margin: auto;
-    font-weight: 700;
+  color: black;
+  font-size: 100px;
+  font-family: "karla", sans-serif !important;
+  width: 90%;
+  line-height: 1;
+  margin: auto;
+  font-weight: 700;
 }
 
 video {
-    width: 100%;
-    filter: contrast(0.15);
+  width: 100%;
+  filter: contrast(0.15);
 }
 
 .profile {
-    padding: 100px 0;
-    background: white;
+  padding: 100px 0;
+  background: white;
 }
 
 .profile h1 {
-    font-family: "Source sans Pro", sans-serif !important;
-    font-size: 50px;
-    color: #4d4d4d;
-    margin-bottom: 40px;
+  font-family: "Source sans Pro", sans-serif !important;
+  font-size: 50px;
+  color: #4d4d4d;
+  margin-bottom: 40px;
 }
 
 .profile p {
-    font-family: "Source Code Pro", sans-serif !important;
-    color: #505050;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 1.7;
+  font-family: "Source Code Pro", sans-serif !important;
+  color: #505050;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.7;
 }
 
 .projects {
-    padding-bottom: 50px;
-    background: #fafafa;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  padding-bottom: 50px;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .projects h1 {
-    text-align: center;
-    text-orientation: upright;
-    text-transform: capitalize;
-    color: #545454;
-    font-weight: 300;
-    font-family: "source sans pro", sans-serif;
-    padding-top: 50px;
+  text-align: center;
+  text-orientation: upright;
+  text-transform: capitalize;
+  color: #545454;
+  font-weight: 300;
+  font-family: "source sans pro", sans-serif;
+  padding-top: 50px;
 }
 
 .projects .row {
-    width: 98%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+  width: 98%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .projects .col {
-    float: left;
-    margin-right: 1px;
-    height: 400px;
-    width: 32.5%;
-    background: white;
-    border-radius: 1px;
-    overflow: hidden;
-    box-shadow: 5px 13px 10px 1px rgba(0, 0, 0, 0.09);
-    margin-top: 40px;
+  float: left;
+  margin-right: 1px;
+  height: 400px;
+  width: 32.5%;
+  background: white;
+  border-radius: 1px;
+  overflow: hidden;
+  box-shadow: 5px 13px 10px 1px rgba(0, 0, 0, 0.09);
+  margin-top: 40px;
 }
 
 .projects .col .description {
-    position: relative;
-    top: -600px;
-    background: black;
-    height: 400px;
-    color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: 300;
-    line-height: 1.4;
-    opacity: 0;
-    visibility: hidden;
-    display: flex;
-    font-size: 14px;
-    border-radius: inherit;
+  position: relative;
+  top: -600px;
+  background: black;
+  height: 400px;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  line-height: 1.4;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  font-size: 14px;
+  border-radius: inherit;
 }
 
-.projects .col:hover>.description {
-    top: -404px;
-    visibility: visible;
-    transition: top 0.6s ease-in-out;
-    opacity: 0.9;
-    animation: bounceInDown 0.85s;
+.projects .col:hover > .description {
+  top: -404px;
+  visibility: visible;
+  transition: top 0.6s ease-in-out;
+  opacity: 0.9;
+  animation: bounceInDown 0.85s;
 }
 
 @keyframes bounceInDown {
-  from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   0% {
@@ -226,459 +230,459 @@ video {
 }
 
 .projects .description p {
-    width: 75%;
+  width: 75%;
 }
 
 .projects .description a {
-    color: white !important;
-    font-size: 14px;
+  color: white !important;
+  font-size: 14px;
 }
 
 .projects .description button {
-    position: relative;
-    top: 20px;
-    background: turquoise;
-    font-family: 'source code pro', sans-serif;
-    padding: 10px;
-    transition: .2s linear;
-    border-radius: 2px;
-    border: 0;
-    color: lightcyan;
-    outline: 0;
-    opacity: 0.9;
-    cursor: pointer;
-    animation-duration: .2s;
-    -webkit-animation-duration: .1s;
+  position: relative;
+  top: 20px;
+  background: turquoise;
+  font-family: "source code pro", sans-serif;
+  padding: 10px;
+  transition: 0.2s linear;
+  border-radius: 2px;
+  border: 0;
+  color: lightcyan;
+  outline: 0;
+  opacity: 0.9;
+  cursor: pointer;
+  animation-duration: 0.2s;
+  -webkit-animation-duration: 0.1s;
 }
 
 .projects .description button:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .projects img {
-    height: 100%;
-    width: 100%;
-    position: sticky;
-    border-radius: inherit;
+  height: 100%;
+  width: 100%;
+  position: sticky;
+  border-radius: inherit;
 }
 
 .projects img:hover {
-    cursor: pointer;
-    transition: transform .7s ease-in-out;
-    transform: scale(1.3)
+  cursor: pointer;
+  transition: transform 0.7s ease-in-out;
+  transform: scale(1.3);
 }
 
 .projects a {
-    margin: 50px auto 0 auto;
+  margin: 50px auto 0 auto;
 }
 
 .btn {
-    border: 0;
-    padding: 13px;
-    background-image: linear-gradient(to right, #72d5e0 0%, rgba(121, 203, 202, 0.98) 51%, rgb(119, 161, 211) 100%);
-    color: white;
-    border-radius: 3px;
-    font-family: "Source Code Pro", sans-serif !important;
-    outline: none;
-    cursor: pointer;
-    font-size: inherit;
+  border: 0;
+  padding: 13px;
+  background-image: linear-gradient(
+    to right,
+    #72d5e0 0%,
+    rgba(121, 203, 202, 0.98) 51%,
+    rgb(119, 161, 211) 100%
+  );
+  color: white;
+  border-radius: 3px;
+  font-family: "Source Code Pro", sans-serif !important;
+  outline: none;
+  cursor: pointer;
+  font-size: inherit;
 }
 
 .projects .btn:hover {
-    box-shadow: 2px 3px 6px #afafaf;
-    transition: transform .2s ease-in-out;
-    transform: scale(1.05);
+  box-shadow: 2px 3px 6px #afafaf;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.05);
 }
 
 .skills {
-    height: 500px;
-    background: turquoise;
-    padding-top: 20px;
-    padding-bottom: 100px;
+  background: turquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .skills h1 {
-    font-size: 50px;
-    text-align: center;
-    color: white;
-    font-family: "Source sans Pro", sans-serif !important;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  font-family: "Source sans Pro", sans-serif !important;
 }
 
-.skills .grid {
-    margin-top: 50px;
+.skills .speciality {
+  display: flex;
+  width: 70%;
+  padding-bottom: 100px;
 }
-
 .skills .box {
-    border: 1px solid rgba(234, 234, 234, 0.79);
-    border-radius: 10px;
-    width: 48%;
-    height: 350px;
-    background: white;
-    box-shadow: 5px 10px 12px 2px #04cab6;
+  border: 1px solid rgba(234, 234, 234, 0.79);
+  flex-basis: calc(50% - 22px);
+  border-radius: 10px;
+  height: 350px;
+  background: white;
+  box-shadow: 5px 10px 12px 2px #04cab6;
 }
 
 .skills .box li {
-    font-weight: 500;
-    font-size: 19px;
-    color: #3a3a3a;
-    letter-spacing: 2px;
-    font-family: "source code pro" !important;
+  font-weight: 500;
+  font-size: 19px;
+  color: #3a3a3a;
+  letter-spacing: 2px;
+  font-family: "source code pro" !important;
 }
 
 .skills .box h1 {
-    color: #000;
-    font-size: 25px;
-    margin-top: 20px;
-    font-weight: 500;
-    padding: 15px 0 8px 0;
-    width: 50%;
-    margin: auto;
-    border-bottom: 2px solid #c5eef3;
+  color: #000;
+  font-size: 25px;
+  margin-top: 20px;
+  font-weight: 500;
+  padding: 15px 0 8px 0;
+  width: 50%;
+  margin: auto;
+  border-bottom: 2px solid #c5eef3;
 }
 
 .skills .box .boxcontent {
-    width: 70%;
-    margin: auto;
+  width: 70%;
+  margin: auto;
 }
 
 .skills .box1 {
-    float: right;
+  margin-right: 20px;
 }
 
 .contact {
-    padding: 50px 0 100px 0;
-    background: #3d92ff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  padding: 50px 0 100px 0;
+  background: #3d92ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact h1 {
-    color: white;
-    font-size: 50px;
-    font-family: "source sans pro", sans-serif;
-    margin: 0 0 40px 0;
+  color: white;
+  font-size: 50px;
+  font-family: "source sans pro", sans-serif;
+  margin: 0 0 40px 0;
 }
 
 .contact form {
-    border: 7px solid white;
-    padding: 30px 150px;
-    box-shadow: 7px 7px 0 #40e0d0;
+  border: 7px solid white;
+  padding: 30px 150px;
+  box-shadow: 7px 7px 0 #40e0d0;
 }
 
 .contact .leftform {
-    float: left;
+  float: left;
 }
 
 .contact .rightform {
-    float: right;
+  float: right;
 }
 
 .contact label {
-    font-size: 18px;
-    color: white;
-    font-weight: 400;
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
 }
 
 .contact input {
-    margin-bottom: 15px;
-    padding: 8px;
-    outline: none;
-    border: 0;
-    width: 290px;
-    font-family: "Source Code Pro", sans-serif !important;
-    font-weight: 300;
-    font-size: 15px;
-    margin-right: 80px;
+  margin-bottom: 15px;
+  padding: 8px;
+  outline: none;
+  border: 0;
+  width: 290px;
+  font-family: "Source Code Pro", sans-serif !important;
+  font-weight: 300;
+  font-size: 15px;
+  margin-right: 80px;
 }
 
 .contact textarea {
-    font-family: "Source Code Pro", sans-serif !important;
-    font-weight: 300;
-    font-size: 15px;
-    padding: 8px;
-    outline: none;
-    height: 211px;
-    border: 0;
+  font-family: "Source Code Pro", sans-serif !important;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 8px;
+  outline: none;
+  height: 211px;
+  border: 0;
 }
 
 .contact input[type="submit"] {
-    background: #2b88ff;
-    width: 70px;
-    color: white;
-    float: left;
-    margin-top: 20px;
-    cursor: pointer;
-    font-size: 18px;
-    padding: 5px 0;
-    transition: .2s linear;
-    border-radius: 2px;
-    box-shadow: 2px 1px 2px #2475dc;
-    backface-visibility: hidden;
+  background: #2b88ff;
+  width: 70px;
+  color: white;
+  float: left;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px 0;
+  transition: 0.2s linear;
+  border-radius: 2px;
+  box-shadow: 2px 1px 2px #2475dc;
+  backface-visibility: hidden;
 }
 
 .contact input[type="submit"]:hover {
-    transform: scale(1.07);
+  transform: scale(1.07);
 }
 
 .contact input[type="submit"]:focus {
-    outline: 0;
+  outline: 0;
 }
 
 .contact input:focus,
 .contact textarea:focus {
-    outline: 3px solid turquoise;
-    transition: all .4s ease-in;
+  outline: 3px solid turquoise;
+  transition: all 0.4s ease-in;
 }
 
 .footer {
-    height: 70px;
-    background: black;
-    color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 70px;
+  background: black;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .active {
-    color: black !important;
-    line-height: 2;
-    font-size: 1.5em;
-    font-weight: 500;
+  color: black !important;
+  line-height: 2;
+  font-size: 1.5em;
+  font-weight: 500;
 }
-
 
 /*SELECTION*/
 
 ::selection {
-    background-color: #72d5e0;
-    color: white;
+  background-color: #72d5e0;
+  color: white;
 }
 
 ::-moz-selection {
-    background-color: #72d5e0;
-    color: white;
+  background-color: #72d5e0;
+  color: white;
 }
-
 
 /*MEDIA QUERIES*/
 
 @media (max-width: 1020px) {
-    .contact form {
-        border: 0;
-        padding: 30px 50px;
-        box-shadow: 0px 0px 0 #40e0d0;
-    }
+  .contact form {
+    border: 0;
+    padding: 30px 50px;
+    box-shadow: 0px 0px 0 #40e0d0;
+  }
 }
 
 @media (min-width: 1424px) {
-    .container {
-        width: 65%;
-    }
+  .container {
+    width: 65%;
+  }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 977px) {
-    .sideNav {
-        width: 100%;
-        height: 70px;
-        background-color: white;
-        z-index: 65;
-        position: fixed;
-        top: 0;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d;
-    }
-    .sideNav p {
-        font-size: 26px;
-        position: absolute;
-        left: 80%;
-        top: -6px;
-        height: -24px;
-        font-weight: 500;
-        letter-spacing: 2px;
-        visibility: visible;
-    }
-    .sideNav ul {
-        background: rgba(64, 224, 208, 0.97);
-        margin-top: 69px;
-        font-size: 30px;
-        padding: 0;
-        margin-left: 0;
-        display: none;
-    }
-    .sideNav ul li {
-        text-align: center;
-    }
-    .sideNav ul li a {
-        font-size: 25px;
-        font-weight: 300;
-        color: #f5f5f5 !important;
-    }
-    .sideNav ul li a:hover {
-        color: white !important;
-        font-size: 32px;
-    }
-    .active {
-        color: white;
-        font-size: 32px;
-    }
-    .landing {
-        display: none;
-    }
-    .realbody {
-        position: absolute;
-        left: 0;
-        right: 0;
-    }
-    .projects {
-        padding: 0;
-    }
-    .projects h1 {
-        margin-top: 95px;
-        padding: 20px 0px;
-        text-decoration: line-through;
-    }
-    .projects img:hover {
-        transform: scale(1);
-        box-shadow: 1px 5px 10px lightgrey;
-        cursor: pointer;
-        filter: blur(0px);
-        -webkit-filter: blur(0px);
-    }
-    .projects .col .description {
-        height: 323px !important;
-        top: -326px !important;
-    }
-    .projects .description button {
-        top: 0px;
-    }
-    .projects .btn {
-        margin: 40px auto;
-    }
-    .profile {
-        padding: 30px 0;
-    }
-    .profile h1 {
-        font-size: 33px;
-        text-decoration: line-through;
-    }
-    .profile p {
-        font-size: 17.5px;
-        line-height: 1.4;
-    }
-    .proj2 {
-        display: none;
-    }
-    .proj5 {
-        display: none;
-    }
-    .projects .row {
-        width: 80%;
-        margin: auto;
-        display: block;
-    }
-    .projects .col {
-        height: 320px;
-        width: 100%;
-    }
-    .contact .leftform {
-        float: none;
-        margin: 0 auto;
-    }
-    .contact .rightform {
-        margin: 0 auto;
-    }
-    .contact form {
-        border: 0;
-        padding: 0;
-        box-shadow: 0px 0px 0 transparent;
-    }
-    .contact input,
-    textarea {
-        margin: auto;
-        width: 95%;
-    }
-    .skills {
-        height: inherit;
-    }
-    .skills h1 {
-        font-size: 40px;
-        width: 90%;
-        margin: auto;
-        margin-bottom: 30px;
-    }
-    .skills .box h1 {
-        font-size: 20px;
-    }
-    .skills .grid {
-        margin-top: 0px;
-    }
-    .skills .box1 {
-        margin-bottom: 30px;
-    }
-    .skills .box {
-        float: none;
-        width: 100%;
-    }
-    .skills .box .boxcontent {
-        width: 65%;
-        margin: 28px auto;
-    }
-    .skills .box h1 {
-        font-weight: 500;
-        font-size: 19px;
-    }
-    .skills .box li {
-        font-weight: 400;
-        font-size: 15px;
-    }
-    .footer p {
-        font-size: 13px;
-        color: white;
-    }
+  .sideNav {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    z-index: 65;
+    position: fixed;
+    top: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d;
+  }
+  .sideNav p {
+    font-size: 26px;
+    position: absolute;
+    left: 80%;
+    top: -6px;
+    height: -24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    visibility: visible;
+  }
+  .sideNav ul {
+    background: rgba(64, 224, 208, 0.97);
+    margin-top: 69px;
+    font-size: 30px;
+    padding: 0;
+    margin-left: 0;
+    display: none;
+  }
+  .sideNav ul li {
+    text-align: center;
+  }
+  .sideNav ul li a {
+    font-size: 25px;
+    font-weight: 300;
+    color: #f5f5f5 !important;
+  }
+  .sideNav ul li a:hover {
+    color: white !important;
+    font-size: 32px;
+  }
+  .active {
+    color: white;
+    font-size: 32px;
+  }
+  .landing {
+    display: none;
+  }
+  .realbody {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .projects {
+    padding: 0;
+  }
+  .projects h1 {
+    margin-top: 95px;
+    padding: 20px 0px;
+    text-decoration: line-through;
+  }
+  .projects img:hover {
+    transform: scale(1);
+    box-shadow: 1px 5px 10px lightgrey;
+    cursor: pointer;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  .projects .col .description {
+    height: 323px !important;
+    top: -326px !important;
+  }
+  .projects .description button {
+    top: 0px;
+  }
+  .projects .btn {
+    margin: 40px auto;
+  }
+  .profile {
+    padding: 30px 0;
+  }
+  .profile h1 {
+    font-size: 33px;
+    text-decoration: line-through;
+  }
+  .profile p {
+    font-size: 17.5px;
+    line-height: 1.4;
+  }
+  .proj2 {
+    display: none;
+  }
+  .proj5 {
+    display: none;
+  }
+  .projects .row {
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+  .projects .col {
+    height: 320px;
+    width: 100%;
+  }
+  .contact .leftform {
+    float: none;
+    margin: 0 auto;
+  }
+  .contact .rightform {
+    margin: 0 auto;
+  }
+  .contact form {
+    border: 0;
+    padding: 0;
+    box-shadow: 0px 0px 0 transparent;
+  }
+  .contact input,
+  textarea {
+    margin: auto;
+    width: 95%;
+  }
+  .speciality {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills h1 {
+    font-size: 40px;
+    width: 90%;
+  }
+  .skills .box h1 {
+    font-size: 20px;
+  }
+
+  .skills .box1 {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  .skills .box .boxcontent {
+    width: 65%;
+    margin: 28px auto;
+  }
+  .skills .box h1 {
+    font-weight: 500;
+    font-size: 19px;
+  }
+  .skills .box li {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .footer p {
+    font-size: 13px;
+    color: white;
+  }
 }
 
 .typed-cursor {
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
 }
 
 @keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
