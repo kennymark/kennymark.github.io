@@ -567,8 +567,16 @@ video {
   .projects .description button {
     top: 0px;
   }
+  .external-links {
+    width: 60%;
+    margin: 0 auto !important;
+    padding: 40px 0 !important;
+  }
   .projects .btn {
-    margin: 40px auto;
+    margin: 10px 0 0 0;
+    width: 100%;
+    padding: 10 0px;
+    font-size: 16px;
   }
   .profile {
     padding: 30px 0;
