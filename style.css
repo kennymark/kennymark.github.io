@@ -459,6 +459,17 @@ a:hover {
   }
 }
 
+@media (min-width: 2004px) {
+  body {
+    width: 70%;
+    margin: auto;
+  }
+  landing {
+    width: 85;
+    margin: auto;
+  }
+}
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 977px) {
   .nav {
     width: 100%;
