@@ -80,7 +80,3 @@ function menuForMobile() {
 	});
 }
 
-$('img').click(() => {
-	$('model').css({ width: '100%', height: '100%' });
-	console.log('proj');
-});
