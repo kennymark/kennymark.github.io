@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Karla|Poppins:500,600");
+
+body {
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+	background: #2fc5cc;
+	transition: all 4s ease-in-out;
+}
+
+h1 {
+	font-family: "Karla", "serif";
+	color: white;
+	font-size: 50px;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-row-gap: 2em;
+	grid-column-gap: 1em;
+	grid-auto-rows: 400px;
+	padding-bottom: 80px;
+}
+
+img {
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+}
+
+img:hover {
+	transform: scale(1.2, 1.2);
+	transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media only screen and (max-width: 500px) {
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0.5em;
+		grid-auto-rows: 400px;
+		grid-auto-columns: 100%;
+		padding: 20px;
+	}
+}

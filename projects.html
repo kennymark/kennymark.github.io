@@ -2,22 +2,75 @@
 <html lang="en" class="">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68267074-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-68267074-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Projects Page</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/fav/favicon-16x16.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Projects(Under Construction)</title>
 </head>
 
 <body>
-    <center style="margin-top: 250px">
-        <!--<a href="index.html"><button class="projects btn back">Go Back</button></a>-->
+    
+<div class="container">
 
-        <h1 style="margin-top: 200px">Under Construction</h1>
-    </center>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
-    <script src="js/main.js"></script>
+
+    <div class="front-end">
+        <h1 class="client">Projects</h1>
+        <div class="gallery">
+            <img src="/imgs/projects/thispage.jpeg" alt="">
+            <img src="/imgs/ozstudio.PNG" alt="">
+            <img src="/imgs/projects/airbnbclone.jpg" alt="">
+            <img src="/imgs/weatherapp.PNG" alt="">
+            <img src="/imgs/projects/fluxweather.jpg" alt="">
+            <img src="/imgs/projects/moviedb.png" alt="">
+            <img src="/imgs/blogPost.PNG" alt="">
+            <img src="/imgs/schoolwebsite.PNG" alt="">
+            <img src="/imgs/projects/cuentalo.jpg" alt="">    
+            <img src="/imgs/texteditor.PNG" alt="">
+            <img src="/imgs/davon.png" alt="">
+            <img src="/imgs/projects/bobmarley.jpg" alt="">
+            <img src="/imgs/projects/keycode.jpg" alt="http://www.kennymark.co.uk/JSKeyCodeFinder/">
+            <img src="/imgs/projects/redesign.jpg" alt="">
+            <img src="/imgs/projects/stucher.jpg" alt="">
+            
+        </div>
+        <div class="modal">
+        </div>
+    </div>
+    <script>
+    function bgchange() {
+        var colors = ["lightcoral", "coral",  "#FFB576", "#FF6B83", "#AD64C5", "#FF4B68", "#F6416C", "#00B8A9", "#2FC5CC", "turquoise"];
+
+        var randNum = Math.floor(Math.random() * colors.length);
+
+        $('body').css('background', colors[randNum])
+            
+    }
+    setInterval(bgchange, 5000);
+    $('img').click(() => {
+            $('.modal').css({ width: '100%', height: '100%', background:'gray', zIndex: 4,});
+            console.log('proj');
+        });
+
+    </script>
+</div>
+
+    </div>
+
+
 </body>
 
 
