@@ -43,9 +43,14 @@ img:hover {
 	.gallery {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-gap: 0.5em;
-		grid-auto-rows: 400px;
+		grid-gap: 1em;
+		grid-auto-rows: 350px;
 		grid-auto-columns: 100%;
 		padding: 20px;
+	}
+
+	img:hover {
+		transform: scale(1, 1);
+		transition: transform 0s;
 	}
 }

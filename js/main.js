@@ -79,4 +79,3 @@ function menuForMobile() {
 		$('.sideNav ul').removeClass('active');
 	});
 }
-
