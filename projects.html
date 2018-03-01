@@ -20,6 +20,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="assets/fav/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/fav/favicon-16x16.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="theme-color" content="#40e0d0">
     <title>Projects (Under Construction)</title>
 </head>
 
@@ -27,33 +28,53 @@
     
 <div class="container">
 
-
-    <div class="front-end">
         <h1 class="client">Projects</h1>
+        <div class="buttons">
+            <div class="btn ">All</div>
+            <div class="btn ">Design</div>
+            <div class="btn ">APIs</div>
+            <div class="btn ">Mobile Apps</div>
+            <div class="btn ">Websites</div>            
+        </div>
         <div class="gallery">
-            <img src="/imgs/projects/thispage.jpeg" alt="">
-            <img src="/imgs/ozstudio.PNG" alt="">
-            <img src="/imgs/projects/airbnbclone.jpg" alt="">
-            <img src="/imgs/weatherapp.PNG" alt="">
-            <img src="/imgs/projects/fluxweather.jpg" alt="">
-            <img src="/imgs/projects/moviedb.png" alt="">
-            <img src="/imgs/blogPost.PNG" alt="">
-            <img src="/imgs/schoolwebsite.PNG" alt="">
-            <img src="/imgs/projects/cuentalo.jpg" alt="">    
-            <img src="/imgs/texteditor.PNG" alt="">
-            <img src="/imgs/davon.png" alt="">
-            <img src="/imgs/projects/bobmarley.jpg" alt="">
-            <img src="/imgs/projects/keycode.jpg" alt="http://www.kennymark.co.uk/JSKeyCodeFinder/">
-            <img src="/imgs/projects/redesign.jpg" alt="">
-            <img src="/imgs/projects/stucher.jpg" alt="">
+            
+            <img src="/imgs/projects/thispage.jpeg" data-type="websites" alt="My Portfolio">
+            <img src="/imgs/ozstudio.PNG" data-type="websites" alt="Oz Studios Website">
+            <img src="/imgs/projects/airbnbclone.jpg" data-type="apis" alt="Airbnb Clone React App">
+            <img src="/imgs/weatherapp.PNG" data-type="apis" alt="Weather App">
+            <img src="/imgs/projects/fluxweather.jpg" data-type="app" alt="Flex React Native App">
+            <img src="/imgs/projects/moviedb.png" data-type="apis" alt="The Movie Cast App">
+            <img src="/imgs/blogPost.PNG" data-type="design" alt="Blog Post Design Recreation">
+            <img src="/imgs/schoolwebsite.PNG" data-type="websites" alt="Univeristy of Chester Project">
+            <img src="/imgs/projects/cuentalo.jpg" data-type="websites" alt="Cuentalo CMS">    
+            <img src="/imgs/texteditor.jpg" data-type="apis" alt="Text Analysis Editor">
+            <img src="/imgs/davon.png" data-type="website" alt="Personal Website for Client">
+            <img src="/imgs/projects/bobmarley.jpg" data-type="websites" alt="Bob Marley Quote Generator">
+            <img src="/imgs/projects/keycode.jpg"  data-type="websites" alt="KeyCode Finder">
+            <img src="/imgs/projects/redesign.jpg" data-type="websites" alt="Website Redesign 2">
+            <img src="/imgs/projects/stucher.jpg" data-type="website" alt="Stucher Ed Tech Website">
+            <img src="/imgs/projects/booksearch.jpg" data-type="app" alt="React Native Book Search App">
             
         </div>
         <div class="modal">
+        <div class="content">
+
+            <div class="header">
+                    <h1>London</h1>
+                    <a class="btn" href="http://www.kennymark.co.uk/JSKeyCodeFinder/">Visit Project &#8611</a>
+            </div>
+            <div class="imgbox">
+                <img src="" alt="">
+
+            </div>
         </div>
-    </div>
+            
+        </div>
+</div>
     <script>
     function bgchange() {
-        var colors = ["lightcoral", "coral",  "#FFB576", "#FF6B83", "#AD64C5", "#FF4B68", "#F6416C", "#00B8A9", "#2FC5CC", "turquoise"];
+        var colors = ["lightcoral", "coral",  "#FFB576", "#FF6B83", "#AD64C5", 
+                     "#FF4B68", "#F6416C", "#00B8A9", "#2FC5CC", "turquoise"];
 
         var randNum = Math.floor(Math.random() * colors.length);
 
@@ -61,10 +82,47 @@
             
     }
     setInterval(bgchange, 5000);
-    $('img').click(() => {
-            $('.modal').css({ width: '100%', height: '100%', background:'gray', zIndex: 4,});
-            console.log('proj');
-        });
+
+    $('.btn').click((e)=>{
+        var pics =  document.querySelectorAll('img')
+       var label = e.target.innerText.toLowerCase();
+       
+
+       Array.from(pics).map((ele, index) =>{
+           var type = ele.dataset.type;
+            if(label === type || label === 'all'){
+                //console.log(ele)
+                ele.style.display = 'grid'
+            }
+            else if(label === 'mobile apps'){
+                label =  'app'
+            }
+            else{
+                console.log('i am blocked')
+                ele.style.display = 'none'
+            }
+           
+            
+        })
+      
+      
+    })
+
+    $('img').click((e)=>{
+        var self = e.target;
+        var source = e.target.src;
+
+        $('.modal').fadeIn(200)
+       var title = self.alt;
+       $('.modal h1').text(title)
+       $('.modal img')[0].src = source
+        console.log( source )
+    })
+
+    $('.modal').click(()=>{
+        $('.modal').fadeOut(300)
+    })
+    
 
     </script>
 </div>

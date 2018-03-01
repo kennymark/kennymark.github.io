@@ -11,7 +11,8 @@ body {
 h1 {
 	font-family: "Karla", "serif";
 	color: white;
-	font-size: 50px;
+	font-size: 60px;
+	font-weight: 500;
 }
 
 .container {
@@ -32,13 +33,82 @@ img {
 	cursor: pointer;
 	height: 100%;
 	width: 100%;
+	box-shadow: 6px 8px 4px #63525247;
 }
 
 img:hover {
 	transform: scale(1.2, 1.2);
-	transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.buttons {
+	display: flex;
+	justify-content: center;
+}
+.btn {
+	border: 0;
+	padding: 15px 10px;
+	color: white;
+	border-radius: 5px;
+	font-family: "Source Code Pro", sans-serif !important;
+	font-weight: 500;
+	outline: none;
+	cursor: pointer;
+	font-size: inherit;
+	width: 160px;
+	text-align: center;
+	margin: 30px;
+	background: #1b1b1b;
+	box-shadow: 1px 2px 3px black;
+}
+.btn:hover {
+	box-shadow: 1px 5px 5px black;
+	transform: scale(1.1);
+	transition: all .4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.modal {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	background: #000000ed !important;
+	right: 0;
+	display: none;
+	z-index: 4;
+}
+.modal h1{
+	font-size: 42px;
+  letter-spacing: 1px;
+  font-family: 'Karla';
+}
+.modal .content {
+	width: 90%;
+	margin: auto;
+}
+.modal .header{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.modal .btn {
+	background: lightgreen;
+	float: right;
+	height: 22px;
 }
 
+.modal .imgbox{
+	width: 70%;
+	height: 700px;
+	margin: 20px 0;
+}
+.modal img{
+	width: 100%;
+	height: 100%;
+	transform: scale(1)
+}
+a{
+	text-decoration: none;
+}
 @media only screen and (max-width: 500px) {
 	.gallery {
 		display: grid;
