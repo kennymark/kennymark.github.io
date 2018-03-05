@@ -6,6 +6,7 @@ body {
 	font-weight: 300;
 	background: #2fc5cc;
 	transition: all 4s ease-in-out;
+	overflow-x: hidden;
 }
 
 h1 {

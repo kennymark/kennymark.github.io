@@ -25,8 +25,8 @@
 </head>
 
 <body>
-    
-<div class="container">
+
+    <div class="container">
 
         <h1 class="client">Projects</h1>
         <div class="buttons">
@@ -34,10 +34,10 @@
             <div class="btn ">Design</div>
             <div class="btn ">APIs</div>
             <div class="btn ">Mobile Apps</div>
-            <div class="btn ">Websites</div>            
+            <div class="btn ">Websites</div>
         </div>
         <div class="gallery">
-            
+
             <img src="/imgs/projects/thispage.jpeg" data-type="websites" alt="My Portfolio">
             <img src="/imgs/ozstudio.PNG" data-type="websites" alt="Oz Studios Website">
             <img src="/imgs/projects/airbnbclone.jpg" data-type="apis" alt="Airbnb Clone React App">
@@ -46,86 +46,83 @@
             <img src="/imgs/projects/moviedb.png" data-type="apis" alt="The Movie Cast App">
             <img src="/imgs/blogPost.PNG" data-type="design" alt="Blog Post Design Recreation">
             <img src="/imgs/schoolwebsite.PNG" data-type="websites" alt="Univeristy of Chester Project">
-            <img src="/imgs/projects/cuentalo.jpg" data-type="websites" alt="Cuentalo CMS">    
+            <img src="/imgs/projects/cuentalo.jpg" data-type="websites" alt="Cuentalo CMS">
             <img src="/imgs/texteditor.jpg" data-type="apis" alt="Text Analysis Editor">
             <img src="/imgs/davon.png" data-type="website" alt="Personal Website for Client">
             <img src="/imgs/projects/bobmarley.jpg" data-type="websites" alt="Bob Marley Quote Generator">
-            <img src="/imgs/projects/keycode.jpg"  data-type="websites" alt="KeyCode Finder">
+            <img src="/imgs/projects/keycode.jpg" data-type="websites" alt="KeyCode Finder">
             <img src="/imgs/projects/redesign.jpg" data-type="websites" alt="Website Redesign 2">
             <img src="/imgs/projects/stucher.jpg" data-type="website" alt="Stucher Ed Tech Website">
             <img src="/imgs/projects/booksearch.jpg" data-type="app" alt="React Native Book Search App">
-            
+            <img src="/imgs/projects/gnotes.png" data-type="website" alt="Good Notes React App">
+
+
         </div>
         <div class="modal">
-        <div class="content">
+            <div class="content">
 
-            <div class="header">
+                <div class="header">
                     <h1>London</h1>
                     <a class="btn" href="http://www.kennymark.co.uk/JSKeyCodeFinder/">Visit Project &#8611</a>
-            </div>
-            <div class="imgbox">
-                <img src="" alt="">
+                </div>
+                <div class="imgbox">
+                    <img src="" alt="">
 
+                </div>
             </div>
+
         </div>
-            
-        </div>
-</div>
+    </div>
     <script>
-    function bgchange() {
-        var colors = ["lightcoral", "coral",  "#FFB576", "#FF6B83", "#AD64C5", 
-                     "#FF4B68", "#F6416C", "#00B8A9", "#2FC5CC", "turquoise"];
+        function bgchange() {
+            var colors = ["lightcoral", "coral", "#FFB576", "#FF6B83", "#AD64C5",
+                "#FF4B68", "#F6416C", "#00B8A9", "#2FC5CC", "turquoise"];
 
-        var randNum = Math.floor(Math.random() * colors.length);
+            var randNum = Math.floor(Math.random() * colors.length);
 
-        $('body').css('background', colors[randNum])
-            
-    }
-    setInterval(bgchange, 5000);
+            $('body').css('background', colors[randNum])
 
-    $('.btn').click((e)=>{
-        var pics =  document.querySelectorAll('img')
-       var label = e.target.innerText.toLowerCase();
-       
+        }
+        setInterval(bgchange, 5000);
 
-       Array.from(pics).map((ele, index) =>{
-           var type = ele.dataset.type;
-            if(label === type || label === 'all'){
-                //console.log(ele)
-                ele.style.display = 'grid'
-            }
-            else if(label === 'mobile apps'){
-                label =  'app'
-            }
-            else{
-                console.log('i am blocked')
-                ele.style.display = 'none'
-            }
-           
-            
+        $('.btn').click((e) => {
+            var pics = document.querySelectorAll('img')
+            var label = e.target.innerText.toLowerCase();
+
+            Array.from(pics).map((ele, index) => {
+                var type = ele.dataset.type;
+                if (label === type || label === 'all') {
+                    //console.log(ele)
+                    ele.style.display = 'grid'
+                }
+                else if (label === 'mobile apps') {
+                    label = 'app'
+                }
+                else {
+                    console.log('i am blocked')
+                    ele.style.display = 'none'
+                }
+            })
         })
-      
-      
-    })
 
-    $('img').click((e)=>{
-        var self = e.target;
-        var source = e.target.src;
+        $('img').click((e) => {
+            var self = e.target;
+            var source = e.target.src;
 
-        $('.modal').fadeIn(200)
-       var title = self.alt;
-       $('.modal h1').text(title)
-       $('.modal img')[0].src = source
-        console.log( source )
-    })
+            $('.modal').fadeIn(200)
+            var title = self.alt;
+            $('.modal h1').text(title)
+            $('.modal img')[0].src = source
+            console.log(source)
+        })
 
-    $('.modal').click(()=>{
-        $('.modal').fadeOut(300)
-    })
-    
+        $('.modal').click(() => {
+            $('.modal').fadeOut(300)
+        })
+
 
     </script>
-</div>
+    </div>
 
     </div>
 
