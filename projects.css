@@ -17,7 +17,7 @@ h1 {
 }
 
 .container {
-	width: 90%;
+	width: 95%;
 	margin: auto;
 }
 
@@ -38,13 +38,15 @@ img {
 }
 
 img:hover {
-	transform: scale(1.2, 1.2);
-	transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transform: scale(1.2);
+	transition: all .2s ease;
 }
+
 .buttons {
 	display: flex;
 	justify-content: center;
 }
+
 .btn {
 	border: 0;
 	padding: 15px 10px;
